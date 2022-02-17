@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --roseRock : #ba6b6c;
+    --roseLight : #ffcccb;
+    --rose : #ef9a9a;
+    --roseDark :#873e41;
+    --bordeau : #560027;
+    --blue : #4f83cc;
+    --vertDark : #005662;
+    --blueLight: #cad8f7;
+    --orange: #FF5733;
+    --vertBleu : #A3E4D7;
+    --vert:#48C9B0;
+}
+
+@font-face {
+    font-family: 'menuFont';
+    src:  url('fonts/ShortStack-Regular.ttf')     
+}
+@font-face {
+    font-family: 'descripFont';
+    src:  url('fonts/OoohBaby-Regular.ttf')     
+}
+
+@font-face {
+    font-family: 'jobFont';
+    src:  url('fonts/ZenLoop-Regular.ttf')     
+}
+
+@font-face {
+    font-family: 'namesFont';
+    src:  url('fonts/GloriaHallelujah-Regular.ttf')     
+}
+
+@font-face {
+    font-family: 'titleFont';
+    src:  url('fonts/Yomogi-Regular.ttf')     
+}
+
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/********* début navbar responsive************/
+
+.navbar{
+    z-index: 2000;
+    position: relative;
+}
+
+.navbar .navList{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    font-family: 'menuFont';
+    background-color: var(--vertDark);
+}
+
+.toggleIcon{
+    justify-content: flex-end;
+}
+
+.navbar .toggleIcon {
+    display: none;
+}
+
+.navbar .navList {
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul .navLink a{
+    padding: 1rem;
+    color: #fff;
+    font-weight: 800;
+}
+
+.navbar ul .navLink:hover a {
+    color: var(--vertBleu);
+    font-weight: bold;
+}
+
+.navbar .toggleIcon li a {
+    color: #fff;
+}
+
+
+/* 
+.navbar ul .navLink a {
+    color: black;
+    padding: 1rem;
+    margin-top: 0;
+}
+
+.navbar ul .navLink:hover{
+    height: 40px;
+    background-color: var(--rose);
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+}
+
+.navbar ul .navLink:hover a{
+    color: #fff;
+} */
+
+@media (max-width:700px) {
+
+    .navbar ul .navLink a{
+        font-size: 17px;
+    }
+   
+    .navbar ul .navLink a:hover {
+        background: none;
+    }
+    
+    .navbar .toggleIcon {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        background-color: var(--vertDark);
+    }
+    
+    .navbar .navList{
+        display: none;
+    }
+
+    .navbar .navLink{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .navbar .navList .navLink{
+        background-color: var(--vertDark);
+        padding: 15px;
+        height: 50px;
+        align-items: center;
+    }
+    
+    /* js change propriété */
+    .navbar .active{
+        display: block;
+        height: 40%;
+    }
+}
+
+/*********fin navbar responsive ************/
+
+.portrait{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 5vh; */
+}
+
+@media (max-width:943px) {
+    .portrait{
+        margin-top: 10vh;
+    }
+}
+
+.persoImg{
+    width: 350px;
+    height: 350px;
+    border-radius:  300px  300px 15px  300px ;
+    /* border-radius: 50% ; */
+    border: 8px solid var(--vertDark);
+    align-items: center;
+}
+
+.navIcon ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    align-items: center;
+}
+
+.navIcon ul li a {
+    font-size: 17vh ;
+    /* color: rgb(0, 86, 98,0.7) */
+    color:var(--vertDark)
+
+}
+
+.navIcon ul li a:hover{
+    color: var(--vertBleu)
+}
+
+.names{
+    font-size: 10vh;
+    font-family: 'namesFont';
+    font-weight : normal;
+    color: var(--vertDark);
+    position: relative;
+    top:20px
+}
+
+.infos{
+    padding: 20px;
+    border-top-right-radius: 40px;
+}
+
+.descrip, .job, .quality, .names{
+  text-align: center;
+}
+
+.job{
+    font-family: "jobFont";
+    font-size: 10vh;
+    font-weight: normal;
+}
+
+.quality{
+    /* color:var(--bordeau); */
+    font-family: "titleFont";
+    font-size: 4vh;
+}
+.descrip{
+    font-family: 'menuFont';
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.descrip b {
+    /* color: rgb(0, 86, 98,0.7); */
+    text-decoration: underline;
+    color: var(--vert);
+    text-decoration-color: black;
+}
+
+@media (max-width:510px) {
+    .divIMG{
+        position: relative;
+        /* bottom:20px */
+    }
+    .infos{
+        padding: 10px;
+    }
+    .persoImg{
+        width: 280px;
+        height: 280px;
+    }
+    .infos .names{
+        position: relative;
+        top:10px
+    }
+    .portrait h1{
+        font-size: 9.5vh;
+    }
+    .portrait h2{
+        font-size: 8vh;
+    }
+    .portrait h3{
+        font-size: 3.5vh;
+    }
+    .portrait .descrip{
+        font-size: 3vh;
+    }
+    .navIcon ul li a{
+        font-size: 15vh;
+    }
+}
