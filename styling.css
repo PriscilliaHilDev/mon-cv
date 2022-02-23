@@ -146,7 +146,6 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    /* margin-top: 5vh; */
 }
 
 @media (max-width:943px) {
@@ -226,7 +225,6 @@ body{
 @media (max-width:510px) {
     .divIMG{
         position: relative;
-        /* bottom:20px */
     }
     .infos{
         padding: 10px;
@@ -255,6 +253,9 @@ body{
         font-size: 15vh;
     }
 }
+/* fin about me */
+
+/* début compétences */
 
 .skills-grid, .content-lang {
     display: flex;
@@ -266,7 +267,9 @@ body{
 	position: relative;
 	margin:auto;
 	list-style: none;
-	text-align: center;  
+	text-align: center; 
+    width: 100%;
+    
 }
 
 .grid figure, .action-true figure {
@@ -276,12 +279,9 @@ body{
     justify-content: center;
     align-items: center;
 }
-/* .grid figure figcaption::before,
-.grid figure figcaption::after {
-	pointer-events: none;
-} */
 
-/* position de l'image */
+
+/* position du texte par rapport à l'image */
 .grid figure figcaption,
 .grid figure figcaption, .action-true figure figcaption {
 	position: absolute;
@@ -299,8 +299,8 @@ body{
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	transform: translate3d(-10px,0,0);
-	/* -webkit-backface-visibility: hidden;
-	backface-visibility: hidden; */
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .tools-skills figure:hover img, .framework-skills figure:hover img , .techno-skills figure:hover img, .action-true figure:hover img {
@@ -320,6 +320,7 @@ body{
     position: relative;
 	opacity: 0;
 }
+
 .tools-skills figure:hover h5, .framework-skills figure:hover h5, .techno-skills figure:hover h5, .action-true figure:hover h5{
 	opacity: 1;	
     color:rgb(97, 26, 26);
@@ -328,3 +329,38 @@ body{
     font-size: 8vh;
     transform: perspective(50px) translateY(-50%);
 }
+
+.skills h
+/* fin compétences */
+
+.all-videos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .app-mobile{
+    background-color: red;
+} */
+
+.diplomes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.dip-col1, .dip-col2{
+    text-align: center;
+    border:1px solid black;
+    padding: 15px;
+    margin:10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
