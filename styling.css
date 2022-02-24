@@ -1,3 +1,5 @@
+
+
 *{
     padding: 0;
     margin: 0;
@@ -265,6 +267,15 @@ body{
 /************ fin A propros de moi ***********/
 
 /************ début mes compétences ***********/
+
+.skills-grid, .content-lang{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+}
+
 .skills h1{
     text-align: center;
     padding: 20px;
@@ -282,31 +293,37 @@ body{
     background-color: #fff;
 }
 
-.techno-skills h2, .tools-skills h2, .framework-skills h2{
+.techno-skills h2, .tools-skills h2, .framework-skills h2, .langs-skills h2{
     font-family: titleFont;
     margin-left: 5%;
     padding: 20px;
     font-size: 30px;
 }
 
-.skills-grid, .content-lang, .app-mobile {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
+.langs-skills{
+    background-color: var(--vertBleu);
+    padding-bottom: 30px;
+}
+
+.content-lang h3{
+    text-transform: uppercase;
+}
+
+.content-lang p{
+    font-family: descripFont;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .grid, .action-true {
 	position: relative;
 	margin:auto;
 	list-style: none;
-    align-items: center;
 }
-
 
 /* position du texte par rapport à l'image */
 .grid figure figcaption,
-.grid figure figcaption, .app-mobile figure figcaption {
+.grid figure figcaption, .realisations figure figcaption {
 	position: absolute;
 	top: 0;
 	max-width: 80%;
@@ -315,8 +332,7 @@ body{
     height: 100%; 
 }
 
-/* animation de l'image */
-.tools-skills figure img, .framework-skills figure img, .techno-skills figure img, .action-true figure img{
+.tools-skills figure img, .framework-skills figure img, .techno-skills figure img{
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	transform: translate3d(-10px,0,0);
@@ -325,21 +341,13 @@ body{
 }
 
 .skills figure img{
-    max-width: 150px;
-    max-height: 150px;
-    width: 150px;
-    height: 150px;
+    max-width: 130px;
+    max-height: 130px;
+    width: 130px;
+    height: 130px;
 }
 
-.app-mobile figure img{
-    max-width: 250px;
-    max-height: 250px;
-    width: 250px;
-    height: 250px;
-}
-
-
-.tools-skills figure:hover img, .framework-skills figure:hover img , .techno-skills figure:hover img, .action-true figure:hover img {
+.tools-skills figure:hover img, .framework-skills figure:hover img , .techno-skills figure:hover img, .realisations figure:hover img {
 	opacity: 0.4;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
@@ -347,7 +355,12 @@ body{
     border-radius: 10%;
 }
 
-.tools-skills figure h5, .framework-skills figure h5, .techno-skills figure h5, .action-true figure h5  {
+.realisations figure img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.tools-skills figure h5, .framework-skills figure h5, .techno-skills figure h5, .realisations figure h5  {
     position: relative;
 	opacity: 0;
     background-color: var(--vertDark);
@@ -355,15 +368,15 @@ body{
     width: 150px;
     border-radius: 5px;
     color:#fff;
+    text-align: center;
 }
 
-.tools-skills figure:hover h5, .framework-skills figure:hover h5, .techno-skills figure:hover h5, .app-mobile figure:hover h5{
+.tools-skills figure:hover h5, .framework-skills figure:hover h5, .techno-skills figure:hover h5, .realisations figure:hover h5{
 	opacity: 1;	
     position: relative;
     top: 50%;
     transform: perspective(50px) translateY(-50%);
 }
-
 
 .techno-skills figure:hover h5{
     font-size: 30px;
@@ -372,18 +385,25 @@ body{
     font-size: 20px;
 }
 
-.app-mobile a{
+.realisations a{
     color:#fff;
 }
 
-
 /************ fin compétences *************/
 
-.all-videos{
+.realisations{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
+
+.realisations video{
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+}
+
 
 .diplomes{
     display: grid;
@@ -397,12 +417,5 @@ body{
     margin:10px;
     border-radius: 5px;
 }
-
-
-
-
-
-
-
 
 
