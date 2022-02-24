@@ -428,10 +428,6 @@ body{
     font-weight: bold;
 }
 
-.all-exp b{
-    color: var(--vertDark);
-}
-
 .all-exp h2 b, .all-exp p {
     font-family: titleFont;
     font-weight: bold;
@@ -456,6 +452,10 @@ body{
 
 .exp-list li{
     font-family: texte;
+}
+
+.exp h3{
+    color: var(--vertDark);
 }
 
 
