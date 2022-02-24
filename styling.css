@@ -8,6 +8,8 @@
     box-sizing: border-box;
 }
 
+
+
 :root{
     --roseRock : #ba6b6c;
     --roseLight : #ffcccb;
@@ -18,8 +20,11 @@
     --vertDark : #005662;
     --blueLight: #cad8f7;
     --orange: #FF5733;
-    --vertBleu : #A3E4D7;
+    --vertBleu : #A9EFE3;
     --vert:#48C9B0;
+    /* --vertCard:  rgb(0, 86, 98,0.6); */
+    --vertCard: #A9EFE3;
+
 }
 
 @font-face {
@@ -44,6 +49,11 @@
 @font-face {
     font-family: 'titleFont';
     src:  url('fonts/Yomogi-Regular.ttf')     
+}
+
+@font-face {
+    font-family: 'texte';
+    src:  url('fonts/Quicksand-VariableFont_wght.ttf')     
 }
 
 
@@ -276,7 +286,7 @@ body{
     padding: 30px;
 }
 
-.skills h1{
+.skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
     text-align: center;
     padding: 20px;
     font-family: titleFont;
@@ -390,11 +400,51 @@ body{
 }
 
 /************ fin compétences *************/
+/********** debut experience********/
+.exp-pro{
+    background-color: var(--vertDark);
+    display: grid;
+}
 
+.all-exp{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.exp-pro .exp{
+    /* border:5px solid var(--vertDark); */
+    border-radius: 15px ;
+    margin: 10px;
+    width: 70%;
+    background-color: #fff;
+    text-align: justify;
+    padding: 20px;
+}
+
+.exp-list{
+    padding: 20px;
+}
+
+.all-exp{
+    background-color: var(--vertCard);
+}
+
+.exp-list li{
+    font-family: menuFont;
+}
+
+
+/**************fin experience*********************/
 /**************debut réalisation*********************/
 
 .realisations{
     display: grid;
+}
+
+.realisations .title{
+    background-color: var(--vertDark);
 }
 
 .realisations .myfastfood{
@@ -419,6 +469,10 @@ body{
 
 /******************début diplomes *************************/
 
+.diplomes{
+    background-color: var(--vertDark);
+    padding-bottom: 20px;
+}
 .dip-col2, .dip-col1{
     display: grid;
     justify-content: center;
@@ -430,6 +484,7 @@ body{
     border:1px solid black;
     margin: 10px;
     padding: 10px;
+    background-color: #fff;
     border-radius: 10px;
 }
 /*************fin diplomes *****************/
