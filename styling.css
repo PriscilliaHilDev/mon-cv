@@ -445,6 +445,13 @@ body{
     padding: 20px;
 }
 
+.exp.exp1{
+    margin-top: 20px;
+}
+
+.exp.exp2{
+    margin-bottom: 20px;
+}
 .all-exp{
     background-color: var(--vertCard);
 }
