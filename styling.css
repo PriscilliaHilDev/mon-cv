@@ -283,7 +283,9 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
@@ -342,7 +344,7 @@ body{
     height: 100%; 
 }
 
-.tools-skills figure img, .framework-skills figure img, .techno-skills figure img{
+.tools-skills figure img, .framework-skills figure img, .techno-skills figure img, .action-true figure img{
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	transform: translate3d(-10px,0,0);
@@ -381,7 +383,7 @@ body{
     text-align: center;
 }
 
-.tools-skills figure:hover h5, .framework-skills figure:hover h5, .techno-skills figure:hover h5, .realisations figure:hover h5{
+.tools-skills figure:hover h5, .framework-skills figure:hover h5, .techno-skills figure:hover h5, .action-true figure:hover h5{
 	opacity: 1;	
     position: relative;
     top: 50%;
@@ -395,11 +397,8 @@ body{
     font-size: 20px;
 }
 
-.realisations a{
-    color:#fff;
-}
-
 /************ fin compétences *************/
+
 /********** debut experience********/
 .exp-pro{
     background-color: var(--vertDark);
@@ -458,19 +457,28 @@ body{
     color: var(--vertDark);
 }
 
+.exp-list span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.exp-list b {
+    color: var(--vert);
+}
 
 /**************fin experience*********************/
 /**************debut réalisation*********************/
-
-.realisations{
-    display: grid;
-}
 
 .realisations .title{
     background-color: var(--vertDark);
 }
 
-.realisations .myfastfood{
+.realisations p{
+    font-size: 17px;
+    font-family: menuFont;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     text-align: center;
 }
 
@@ -488,6 +496,19 @@ body{
     height: 250px;
 }
 
+ .action-true figure img, .action-true figure:hover h5{
+    display: block;
+    margin: 0 auto;
+} 
+
+.action-true figure h5{
+    background-color: #032a30;
+}
+
+.realisations a{
+    color: #fff;
+}
+
 /******************realisation fin ************************/
 
 /******************début diplomes *************************/
@@ -496,6 +517,7 @@ body{
     background-color: var(--vertDark);
     padding-bottom: 20px;
 }
+
 .dip-col2, .dip-col1{
     display: grid;
     justify-content: center;
@@ -510,6 +532,9 @@ body{
     background-color: #fff;
     border-radius: 10px;
 }
+
+.dip
+
 /*************fin diplomes *****************/
 
 
