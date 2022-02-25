@@ -11,19 +11,23 @@
 
 
 :root{
-    --roseRock : #ba6b6c;
+    /* --roseRock : #ba6b6c;
     --roseLight : #ffcccb;
     --rose : #ef9a9a;
     --roseDark :#873e41;
     --bordeau : #560027;
-    --blue : #4f83cc;
-    --vertDark : #005662;
+    --blue : #4f83cc; 
+    --vertCard:  rgb(0, 86, 98,0.6); 
     --blueLight: #cad8f7;
-    --orange: #FF5733;
+    --orange: #FF5733; */
+    
     --vertBleu : #A9EFE3;
     --vert:#48C9B0;
-    /* --vertCard:  rgb(0, 86, 98,0.6); */
+    --vertDark : #005662;
     --vertCard: #A9EFE3;
+    --blackGreen:#032a30;
+    --darkGreen: #04292e;
+
 
 }
 
@@ -38,12 +42,12 @@
 
 @font-face {
     font-family: 'jobFont';
-    src:  url('fonts/ZenLoop-Regular.ttf')     
+    src:  url('fonts/SpecialElite-Regular.ttf')     
 }
 
 @font-face {
     font-family: 'namesFont';
-    src:  url('fonts/GloriaHallelujah-Regular.ttf')     
+    src:  url('fonts/DancingScript-VariableFont_wght.ttf')     
 }
 
 @font-face {
@@ -163,6 +167,7 @@ body{
 .aboutMe{
     background-image: url(/img/flowers-g397c6e6aa_1920.jpg);
     background-size: cover;
+
 }
 .portrait{
     display: flex;
@@ -170,6 +175,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 
 @media (max-width:943px) {
@@ -209,7 +215,7 @@ body{
     font-weight : normal;
     color: var(--vertDark);
     position: relative;
-    top:20px
+    
 }
 
 .infos{
@@ -223,8 +229,9 @@ body{
 
 .job{
     font-family: "jobFont";
-    font-size: 50px;
+    font-size: 30px;
     font-weight: normal;
+   color: var(--darkGreen);
 }
 
 .quality{
@@ -333,6 +340,7 @@ body{
 	list-style: none;
 }
 
+
 /* position du texte par rapport à l'image */
 .grid figure figcaption,
 .grid figure figcaption, .realisations figure figcaption {
@@ -353,10 +361,10 @@ body{
 }
 
 .skills figure img{
-    max-width: 130px;
-    max-height: 130px;
-    width: 130px;
-    height: 130px;
+    max-width: 145px;
+    max-height: 150px;
+    width: 145px;
+    height: 150px;
 }
 
 .tools-skills figure:hover img, .framework-skills figure:hover img , .techno-skills figure:hover img, .realisations figure:hover img {
@@ -377,7 +385,7 @@ body{
 	opacity: 0;
     background-color: var(--vertDark);
     padding: 10px;
-    width: 150px;
+    width: 145px;
     border-radius: 5px;
     color:#fff;
     text-align: center;
@@ -454,7 +462,7 @@ body{
     margin-bottom: 20px;
 }
 .all-exp{
-    background-color: var(--vertCard);
+    background-color: var(--vert);
 }
 
 .exp-list li{
@@ -478,6 +486,10 @@ body{
 /**************fin experience*********************/
 /**************debut réalisation*********************/
 
+/* 
+.realisations{
+    background-color:  rgba(101, 196, 196, 0.3); 
+} */
 .realisations .title{
     background-color: var(--vertDark);
 }
@@ -489,7 +501,7 @@ body{
     flex-direction: column;
     padding: 20px;
     text-align: center;
-    color: var(--vertDark);
+    color: var(--blackGreen);
 }
 
 .all-videos{
@@ -512,7 +524,7 @@ body{
 } 
 
 .action-true figure h5{
-    background-color: #032a30;
+    background-color: var(--blackGreen);
 }
 
 .realisations a{
@@ -561,7 +573,35 @@ body{
 
 /*************fin diplomes *****************/
 /******************début Loisirs *************************/
+.loisirs{
+   height: auto;
+   background-color: var(--vertDark);
+}
 
+.loisirs h2{
+    margin-left: 5%;
+    font-family: "titleFont";
+    color: #fff;
+    font-size: 28px;
+}
+
+.loisirs p{
+    text-align: center;
+    padding: 20px;
+    font-family: menuFont;
+    font-size: 17px;
+    color: #fff;
+}
+.loisirs i{
+    color: var(--vert);
+    font-size: 20px;
+}
+
+footer{
+  padding: 30px;
+  text-align: center;
+  color: var(--vertDark);
+}
 
 
 
