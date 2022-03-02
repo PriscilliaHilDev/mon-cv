@@ -305,7 +305,7 @@ body{
        display: flex;
        justify-content: center;
        flex-basis: 50%;
-   }      
+   }   
    
 }
 
@@ -575,13 +575,12 @@ body{
     padding-bottom: 20px;
 }
 
-.dip-col1, .dip-col2{
+.dip-col2, .dip-col1{
     display: grid;
     justify-content: center;
+    grid-template-columns: repeat(auto-fill, 45%) ;
     grid-auto-flow: column;
-    grid-template-columns: repeat(2, 1fr);
 }
-
 
 .dip{
     margin: 10px;
