@@ -198,6 +198,7 @@ body{
 }
 
 
+
 .persoImg{
     width: 350px;
     height: 350px;
@@ -298,6 +299,16 @@ body{
 /************ fin A propros de moi ***********/
 
 /************ début mes compétences ***********/
+
+@media (max-width:675px) {
+   .grid{
+       display: flex;
+       justify-content: center;
+       flex-basis: 50%;
+   }      
+   
+}
+
 
 .skills-grid, .content-lang{
     display: flex;
@@ -499,9 +510,11 @@ body{
     text-decoration: underline;
 }
 
-.exp-list b, /*.exp.exp2 b*/ {
+.exp-list b{
     color: var(--vert);
 }
+
+ /*.exp.exp2 b*/ 
 
 
 
@@ -562,15 +575,15 @@ body{
     padding-bottom: 20px;
 }
 
-.dip-col2, .dip-col1{
+.dip-col1, .dip-col2{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, 45%) ;
     grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
 }
 
+
 .dip{
-    border:1px solid black;
     margin: 10px;
     padding: 20px;
     background-color: #fff;
