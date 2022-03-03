@@ -599,6 +599,41 @@ footer{
 
 /****************** fin Loisirs *************************/
 /****************** début responsives values *************************/
+@media (max-width: 912px) and (min-width:530px)  and (orientation:portrait){
+
+    /******* Début A propos de moi *******/
+    .names{
+       font-size: 75px;
+    } 
+   
+    .infos{
+        position: relative;
+        bottom:8%;
+    }
+    .job{
+        font-size: 40px;
+    }
+    .quality{
+        font-size: 28px;
+    }
+    .descrip b, .descrip{
+        font-size: 22px;
+    }
+    .aboutMe{
+        padding-bottom: 0px;
+        height: auto;
+    }
+    .navIcon ul li a {
+        font-size: 85px ;
+        padding: 0;
+    }
+    .portrait{
+       height: auto;
+       padding-top: 3vh;
+       padding-bottom: 3vh;
+    }
+    /******* fin  A propos de moi *******/
+}
 
 @media only screen and (max-width:414px) and (min-width:281px) {
     /**** debut a propros de moi ****/
@@ -622,11 +657,11 @@ footer{
     }
 
     .quality{
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .job{
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .descrip, .descrip b {
@@ -674,45 +709,21 @@ footer{
     /**** fin réalisations ****/
 }
 
-@media (max-width: 912px) and (min-width:530px)  and (orientation:portrait){
+@media (max-width: 531px) and (min-width:415px) and (orientation:portrait){
 
-    /******* Début A propos de moi *******/
-    .names{
-       font-size: 75px;
-    } 
-   
-    .infos{
-        position: relative;
-        bottom:8%;
+    .persoImg{
+        width: 270px;
+        height: 270px;
+    }
+
+    .quality{
+        font-size: 3.8vh;
     }
     .job{
-        font-size: 40px;
-    }
-    .quality{
-        font-size: 28px;
-    }
-    .descrip b, .descrip{
-        font-size: 22px;
-    }
-    .aboutMe{
-        padding-bottom: 0px;
-        height: auto;
+        font-size: 5.5vh;
     }
     .navIcon ul li a {
-        font-size: 85px ;
-        padding: 0;
-    }
-    .portrait{
-       height: auto;
-       padding-top: 3vh;
-       padding-bottom: 3vh;
-    }
-    /******* fin  A propos de moi *******/
-}
-
-@media (max-width: 531px) and (min-width:415px) and (orientation:portrait){
-    .names{
-        color:blue;
+        font-size: 18vw ;
     }
 }
 
@@ -780,7 +791,7 @@ footer{
     .realisations h2, .dip p.title{
         font-size: 2.5vh;
     }
-    
+
     .all-videos video{
         margin-bottom: 20px;
         border-radius: 10px;
@@ -788,7 +799,6 @@ footer{
         height: 200px;
     }
     
-
 }
 
 /****************** fin responsives values *************************/
