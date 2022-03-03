@@ -207,8 +207,7 @@ body{
     font-size: 60px;
     font-family: 'namesFont';
     font-weight : normal;
-    /* color: var(--vertDark); */
-    color: red;
+    color: var(--vertDark);
     position: relative;
 }
 
@@ -631,7 +630,7 @@ footer{
     /******* fin  A propos de moi *******/
 }
 
-@media only screen and (max-width:414px) and (min-width:281px) {
+@media only screen and (max-width:414px) and (min-width:321px) {
     /**** debut a propros de moi ****/
 
     .navIcon ul li a {
@@ -664,6 +663,7 @@ footer{
         font-size: 17px;
     }
     /**** fin a propros de moi****/
+
     /**** debut compétences ****/
 
     .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
@@ -681,6 +681,7 @@ footer{
         font-size: 19px;
     }
     /**** fin compétences ****/
+
     /**** début réalisations ****/
 
     .all-videos{
@@ -703,6 +704,93 @@ footer{
         font-size: 20px;
     }    
     /**** fin réalisations ****/
+}
+
+@media only screen and (max-width:320px) and (min-width:281px) {
+   
+    /*** A propos de moi **/
+    .persoImg{
+        width: 230px;
+        height: 230px;
+    }
+    .names{
+        font-size: 8.3vh;
+    }
+    .job{
+        font-size: 4vh;
+    }
+    .quality{
+        font-size: 3.5vh;
+    }
+
+    .descrip, .descrip b, .dip p, .loisirs p, .realisations p, .exp-list li, .content-lang p{
+        font-size: 3vh;
+    }
+    .navIcon ul li a {
+        font-size: 23vw ;
+    }
+
+    /*** fin A propos de moi ***/
+
+    /*** début compétences **/
+
+    .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
+        font-size: calc(18px + 2vh);
+    } 
+
+    .skills figure img{
+        max-width: 100px;
+        max-height: 100px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .tools-skills figure h5, .framework-skills figure h5, .techno-skills figure h5, .realisations figure h5  {
+        width: 100px;
+        padding: 10px;
+    }
+    .techno-skills figure:hover h5, .framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5{
+        font-size: 14px;
+    }
+    .techno-skills h2, .tools-skills h2, .framework-skills h2, .langs-skills h2, .content-lang h2{
+        font-size: 4vh;
+    }
+    .content-lang h3{
+        font-size: 3vh;
+    }
+
+    .langs-skills p{
+        font-size: 2.7vh;
+    }
+    /*** fin compétences  **/
+
+    /*** début expérience **/
+
+    .exp h3{
+        font-size: 3vh;
+        text-align: left;
+    }
+   
+    .all-exp h2, .all-exp a{
+        font-size: 3.5vh;
+    }
+
+    /*** fin expérience **/
+
+    /*** début réalisations **/
+
+    .realisations h2, .dip p.title{
+        font-size: 3.5vh;
+    }
+
+    .all-videos video{
+        margin-bottom: 20px;
+        border-radius: 10px;
+        width: 250px;
+        height: 200px;
+    }
+    /*** fin réalisations **/
+
 }
 
 @media (max-width: 531px) and (min-width:415px) and (orientation:portrait){
