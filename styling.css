@@ -524,6 +524,7 @@ body{
     .dip-col2, .dip-col1{
         grid-template-columns: repeat(auto-fill, 45%) ;
     }
+  
 }
 
 .diplomes{
@@ -610,6 +611,7 @@ footer{
     }
     .quality{
         font-size: 28px;
+        color:red
     }
     .descrip b, .descrip{
         font-size: 22px;
@@ -630,11 +632,48 @@ footer{
     /******* fin  A propos de moi *******/
 }
 
+/*** mode  paysage ***/
+
+@media (max-width: 912px) and (min-width:530px)  and (orientation:landscape){
+    .navIcon ul li a {
+        font-size: 14vw ;
+    }
+    .quality{
+        font-size: 7vh;
+    }
+    .content-lang p{
+        font-size: 7vh;
+    }
+}
+
+
+@media (max-width: 531px) and (min-width:415px) and (orientation:portrait){
+    
+    /***  debut A propos de moi **/
+
+    .persoImg{
+        width: 270px;
+        height: 270px;
+    }
+
+    .quality{
+        font-size: 3.4vh;
+    }
+    .job{
+        font-size: 5.5vh;
+    }
+    .navIcon ul li a {
+        font-size: 16vw ;
+    }
+    /*** fin A propos de moi **/
+}
+
+
 @media only screen and (max-width:414px) and (min-width:321px) {
     /**** debut a propros de moi ****/
 
     .navIcon ul li a {
-        font-size: 22vw ;
+        font-size: 19vw ;
     }
 
     .aboutMe{
@@ -705,6 +744,7 @@ footer{
     }    
     /**** fin réalisations ****/
 }
+
 
 @media only screen and (max-width:320px) and (min-width:281px) {
    
@@ -787,29 +827,6 @@ footer{
         height: 200px;
     }
     /*** fin réalisations **/
-
-}
-
-@media (max-width: 531px) and (min-width:415px) and (orientation:portrait){
-    
-    /***  debut A propos de moi **/
-
-    .persoImg{
-        width: 270px;
-        height: 270px;
-    }
-
-    .quality{
-        font-size: 3.5vh;
-    }
-    .job{
-        font-size: 5.5vh;
-    }
-    .navIcon ul li a {
-        font-size: 18vw ;
-    }
-    /*** fin A propos de moi **/
-
 }
 
 /**** les plus petites tailles d'écrans *****/
