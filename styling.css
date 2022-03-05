@@ -470,8 +470,6 @@ body{
 .realisations p{
     font-size: 17px;
     font-family: texte;
-    display: flex;
-    flex-direction: column;
     padding-top: 10px;
     text-align: center;
     color: var(--blackGreen);
