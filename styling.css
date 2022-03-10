@@ -8,12 +8,13 @@
 }
 
 :root{
-    --vertBleu : #A9EFE3;
+    --vertBleu : #B1F0EB;
     --vert:#48C9B0;
     --vertDark : #005662;
     --vertCard: #A9EFE3;
     --blackGreen:#032a30;
     --darkGreen: #04292e;
+    --vertLight :#BDF7F2;
 }
 
 @font-face {
@@ -85,7 +86,7 @@ body{
 }
 
 .navbar ul .navLink:hover a {
-    color: var(--vertBleu);
+    color: var(--vertLight);
     font-weight: bold;
 }
 
@@ -307,7 +308,7 @@ body{
     font-size: 25px;
 }
 
-.grid, .action-true {
+.grid, .action-true{
 	position: relative;
 	margin:auto;
 	list-style: none;
@@ -323,8 +324,8 @@ body{
     width: 80%;
     height: 100%; 
 }
-
-.tools-skills figure img, .framework-skills figure img, .techno-skills figure img, .action-true figure img{
+/* animation image */
+.tools-skills figure img, .framework-skills figure img, .techno-skills figure img, .action-true figure img, .food-app figure img{
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	transform: translate3d(-10px,0,0);
@@ -332,13 +333,14 @@ body{
 	backface-visibility: hidden;
 }
 
+
 .skills figure img{
     max-width: 145px;
     max-height: 150px;
     width: 145px;
     height: 150px;
 }
-
+/** color hover*/
 .tools-skills figure:hover img, .framework-skills figure:hover img , .techno-skills figure:hover img, .realisations figure:hover img {
 	opacity: 0.4;
 	-webkit-transform: translate3d(0,0,0);
@@ -363,7 +365,7 @@ body{
     text-align: center;
 }
 
-.tools-skills figure:hover h5, .framework-skills figure:hover h5, .techno-skills figure:hover h5, .action-true figure:hover h5{
+.tools-skills figure:hover h5, .framework-skills figure:hover h5, .techno-skills figure:hover h5, .action-true figure:hover h5, .food-app figure:hover h5{
 	opacity: 1;	
     position: relative;
     top: 50%;
@@ -373,7 +375,7 @@ body{
 .techno-skills figure:hover h5{
     font-size: 30px;
 }
-.framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5{
+.framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5, .food-app figure:hover h5{
     font-size: 20px;
 }
 
@@ -387,7 +389,7 @@ body{
 .all-exp{
    display: flex;
    flex-direction: column;
-   justify-content: space-evenly;
+   justify-content: space-between;
    align-items: center;
 }
 
@@ -434,7 +436,9 @@ body{
     margin-bottom: 20px;
 }
 .all-exp{
-    background-color: var(--vert);
+    /* background-color: var(--vert); */
+    background-color: rgba(144, 230, 243, 0.3);
+
 }
 
 .exp-list li{
@@ -466,6 +470,11 @@ body{
     background-color: var(--vertDark);
 }
 
+.realisations{
+    /* background-color: rgba(8, 92, 117, 0.3); */
+    background-color: var(--vertBleu);
+}
+
 .realisations p{
     font-size: 17px;
     font-family: texte;
@@ -491,12 +500,12 @@ body{
     height: 250px;
 }
 
- .action-true figure img, .action-true figure:hover h5{
+ .action-true figure img, .action-true figure:hover h5, .food-app figure:hover h5{
     display: block;
     margin: 0 auto;
 } 
 
-.action-true figure h5{
+.action-true figure h5, .food-app figure h5{
     background-color: var(--blackGreen);
 }
 
