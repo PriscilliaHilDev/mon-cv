@@ -305,7 +305,6 @@ body{
 .content-lang p{
     font-family: namesFont;
     font-size: 25px;
-    font-weight: bold;
 }
 
 .grid, .action-true {
