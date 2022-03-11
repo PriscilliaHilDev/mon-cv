@@ -771,13 +771,13 @@ footer{
         height: 230px;
     }
     .names{
-        font-size: 8.3vh;
+        font-size: 8vh;
     }
     .job{
         font-size: 4vh;
     }
     .quality{
-        font-size: 3.5vh;
+        font-size: 3vh;
     }
 
     .descrip, .descrip b, .dip p, .loisirs p, .realisations p, .exp-list li, .content-lang p{
@@ -881,7 +881,7 @@ footer{
     .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
         font-size: calc(16px + 2vh);
     } 
-    
+
     .tools-skills figure img, .framework-skills figure img, .techno-skills figure img, .action-true figure img, .food-app figure img{
         transform: translate3d(0px,0,0);
     }
