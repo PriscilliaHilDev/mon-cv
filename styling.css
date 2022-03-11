@@ -795,7 +795,7 @@ footer{
         width: 100px;
         padding: 10px;
     }
-    .techno-skills figure:hover h5, .framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5{
+    .techno-skills figure:hover h5, .framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5, .food-app figure:hover h5{
         font-size: 14px;
     }
     .techno-skills h2, .tools-skills h2, .framework-skills h2, .langs-skills h2, .content-lang h2{
@@ -879,7 +879,7 @@ footer{
         width: 80px;
         padding: 10px;
     }
-    .techno-skills figure:hover h5, .framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5{
+    .techno-skills figure:hover h5, .framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5, .food-app figure:hover h5{
         font-size: 11px;
     }
     .techno-skills h2, .tools-skills h2, .framework-skills h2, .langs-skills h2, .content-lang h2{
