@@ -35,6 +35,11 @@
     font-family: 'namesFont';
     src:  url('fonts/DancingScript-VariableFont_wght.ttf')     
 }
+@font-face {
+    font-family: 'qualityFont';
+    src:  url('fonts/Hubballi-Regular.ttf')     
+}
+
 
 @font-face {
     font-family: 'titleFont';
@@ -166,6 +171,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+
 }
 
 @media (max-width:900px) {
@@ -176,7 +182,8 @@ body{
 
 @media (min-width:900px) {
     .portrait{
-        height: 90vh;
+        height: auto;
+        margin-top: 5vh;
     }
 }
 
@@ -230,7 +237,7 @@ body{
 
 .quality{
     font-family: "titleFont";
-    font-size: 4vh;
+    font-size: 25px;
 }
 .descrip{
     font-family: 'menuFont';
@@ -601,11 +608,26 @@ footer{
 
 /****************** fin Loisirs *************************/
 /****************** début responsives values *************************/
-@media (max-width: 912px) and (min-width:530px)  and (orientation:portrait){
+
+/*** mode  paysage ***/
+
+@media (max-width: 912px) and (min-width:530px)  and (orientation:landscape){
+    .navIcon ul li a {
+        font-size: 14vw ;
+    }
+    .quality{
+        font-size: 22px;
+    }
+    .content-lang p{
+        font-size: 7vh;
+    }
+}
+
+@media (max-width: 915px) and (min-width:530px)  {
 
     /******* Début A propos de moi *******/
     .names{
-       font-size: 75px;
+       font-size: 65px;
     } 
    
     .infos{
@@ -613,14 +635,13 @@ footer{
         bottom:8%;
     }
     .job{
-        font-size: 40px;
+        font-size: 35px;
     }
     .quality{
-        font-size: 28px;
-        color:red
+        font-size: 20px;
     }
     .descrip b, .descrip{
-        font-size: 22px;
+        font-size: 20px;
     }
     .aboutMe{
         padding-bottom: 0px;
@@ -638,19 +659,6 @@ footer{
     /******* fin  A propos de moi *******/
 }
 
-/*** mode  paysage ***/
-
-@media (max-width: 912px) and (min-width:530px)  and (orientation:landscape){
-    .navIcon ul li a {
-        font-size: 14vw ;
-    }
-    .quality{
-        font-size: 7vh;
-    }
-    .content-lang p{
-        font-size: 7vh;
-    }
-}
 
 
 @media (max-width: 531px) and (min-width:415px) and (orientation:portrait){
