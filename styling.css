@@ -340,7 +340,6 @@ body{
 	backface-visibility: hidden;
 }
 
-
 .skills figure img{
     max-width: 145px;
     max-height: 150px;
@@ -723,6 +722,10 @@ footer{
         font-size: calc(22px + 2vh);
     } 
 
+    .tools-skills figure img, .framework-skills figure img, .techno-skills figure img, .action-true figure img, .food-app figure img{
+        transform: translate3d(0px,0,0);
+    }
+
     .skills figure img{
         max-width: 125px;
         max-height: 120px;
@@ -791,6 +794,9 @@ footer{
     .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
         font-size: calc(18px + 2vh);
     } 
+    .tools-skills figure img, .framework-skills figure img, .techno-skills figure img, .action-true figure img, .food-app figure img{
+        transform: translate3d(0px,0,0);
+    }
 
     .skills figure img{
         max-width: 100px;
@@ -875,6 +881,10 @@ footer{
     .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
         font-size: calc(16px + 2vh);
     } 
+    
+    .tools-skills figure img, .framework-skills figure img, .techno-skills figure img, .action-true figure img, .food-app figure img{
+        transform: translate3d(0px,0,0);
+    }
 
     .skills figure img{
         max-width: 80px;
