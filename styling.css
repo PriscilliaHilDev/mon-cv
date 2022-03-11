@@ -322,7 +322,7 @@ body{
 
 /* position du texte par rapport à l'image */
 .grid figure figcaption,
-.grid figure figcaption, .realisations figure figcaption {
+.grid figure figcaption {
 	position: absolute;
 	top: 0;
 	max-width: 80%;
@@ -345,7 +345,7 @@ body{
     width: 145px;
     height: 150px;
 }
-/** color hover*/
+/** color hover img */
 .tools-skills figure:hover img, .framework-skills figure:hover img , .techno-skills figure:hover img, .realisations figure:hover img {
 	opacity: 0.4;
 	-webkit-transform: translate3d(0,0,0);
@@ -359,7 +359,7 @@ body{
     border-radius: 10px;
 }
 
-.tools-skills figure h5, .framework-skills figure h5, .techno-skills figure h5, .realisations figure h5  {
+.tools-skills figure h5, .framework-skills figure h5, .techno-skills figure h5, .action-true figure h5, .food-app h5 {
     position: relative;
 	opacity: 0;
     background-color: var(--vertDark);
@@ -370,7 +370,7 @@ body{
     text-align: center;
 }
 
-.tools-skills figure:hover h5, .framework-skills figure:hover h5, .techno-skills figure:hover h5, .action-true figure:hover h5, .food-app figure:hover h5{
+.tools-skills figure:hover h5, .framework-skills figure:hover h5, .techno-skills figure:hover h5, .action-true figure:hover h5, .food-app:hover h5{
 	opacity: 1;	
     position: relative;
     top: 50%;
@@ -380,7 +380,7 @@ body{
 .techno-skills figure:hover h5{
     font-size: 30px;
 }
-.framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5, .food-app figure:hover h5{
+.framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5, .food-app:hover h5{
     font-size: 20px;
 }
 
@@ -499,18 +499,17 @@ body{
 }
 
 .all-videos video{
-    margin-bottom: 20px;
     border-radius: 10px;
     width: 400px;
-    height: 250px;
+    height: auto;
 }
 
- .action-true figure img, .action-true figure:hover h5, .food-app figure:hover h5{
+ .action-true figure img, .food-app figure img, .action-true:hover h5, .food-app:hover h5{
     display: block;
     margin: 0 auto;
 } 
 
-.action-true figure h5, .food-app figure h5{
+.action-true figure h5, .food-app h5{
     background-color: var(--blackGreen);
 }
 
@@ -742,6 +741,7 @@ footer{
 
     .all-videos video{
         width: 100%;
+        height: auto;
     }
 
     .all-videos .mobile{
@@ -772,7 +772,7 @@ footer{
         font-size: 4vh;
     }
     .quality{
-        font-size: 3vh;
+        font-size: 2.8vh;
     }
 
     .descrip, .descrip b, .dip p, .loisirs p, .realisations p, .exp-list li, .content-lang p{
@@ -794,17 +794,18 @@ footer{
     }
 
     .skills figure img{
-        max-width: 100px;
-        max-height: 100px;
-        width: 100px;
-        height: 100px;
+        max-width: 110px;
+        max-height: 110px;
+        width: 110px;
+        height: 110px;
     }
 
-    .tools-skills figure h5, .framework-skills figure h5, .techno-skills figure h5, .realisations figure h5  {
-        width: 100px;
+    .tools-skills figure h5, .framework-skills figure h5, .techno-skills figure h5 , .action-true figure:hover h5, .food-app:hover h5{
+        width: 110px;
         padding: 10px;
     }
-    .techno-skills figure:hover h5, .framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5, .food-app figure:hover h5{
+
+    .techno-skills figure:hover h5, .framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5, .food-app:hover h5{
         font-size: 14px;
     }
     .techno-skills h2, .tools-skills h2, .framework-skills h2, .langs-skills h2, .content-lang h2{
@@ -826,20 +827,26 @@ footer{
         text-align: left;
     }
 
-
     /*** fin expérience **/
 
     /*** début réalisations **/
 
     .realisations h2, .dip p.title, .all-exp h2, .all-exp a{
-        font-size: 3.2vh;
+        font-size: 2.8vh;
     }
 
+    .all-exp h3{
+        font-size: 2.6vh;
+    }
+    .realisations p, .all-exp p, .all-exp li{
+        font-size: 2.5vh;
+    }
+  
     .all-videos video{
         margin-bottom: 20px;
         border-radius: 10px;
         width: 250px;
-        height: 200px;
+        height: auto;
     }
     /*** fin réalisations **/
 }
@@ -874,7 +881,7 @@ footer{
     /*** début compétences **/
 
     .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
-        font-size: calc(16px + 2vh);
+        font-size: calc(12px + 2vh);
     } 
 
     .tools-skills figure img, .framework-skills figure img, .techno-skills figure img, .action-true figure img, .food-app figure img{
@@ -888,12 +895,10 @@ footer{
         height: 80px;
     }
 
-    .tools-skills figure h5, .framework-skills figure h5, .techno-skills figure h5, .realisations figure h5  {
-        width: 80px;
+    .techno-skills figure:hover h5, .framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5, .food-app:hover h5{
+        font-size: 13px;
+        width: 100px;
         padding: 10px;
-    }
-    .techno-skills figure:hover h5, .framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5, .food-app figure:hover h5{
-        font-size: 11px;
     }
     .techno-skills h2, .tools-skills h2, .framework-skills h2, .langs-skills h2, .content-lang h2{
         font-size: 3.5vh;
@@ -906,12 +911,12 @@ footer{
     /*** début expérience **/
 
     .exp h3{
-        font-size: 2.5vh;
+        font-size: 2.1vh;
         text-align: left;
     }
    
     .all-exp h2, .all-exp a{
-        font-size: 2.8vh;
+        font-size: 2.3vh;
     }
 
     /*** fin expérience **/
@@ -919,14 +924,14 @@ footer{
     /*** début réalisations **/
 
     .realisations h2, .dip p.title{
-        font-size: 2.5vh;
+        font-size: 2.2vh;
     }
 
     .all-videos video{
         margin-bottom: 20px;
         border-radius: 10px;
         width: 250px;
-        height: 200px;
+        height: auto;
     }
     /*** fin réalisations **/
 }
