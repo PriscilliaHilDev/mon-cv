@@ -187,12 +187,12 @@ body{
 }
 
 .persoImg{
-    width: 350px;
-    height: 350px;
-    border-radius:  300px  300px 15px  300px ;
+    width: 25%;
+    border-radius:  50% ;
     border: 8px solid var(--vertDark);
     align-items: center;
 }
+
 
 .navIcon ul{
     display: flex;
@@ -229,7 +229,7 @@ body{
 
 .job{
     font-family: "jobFont";
-    font-size: 30px;
+    font-size: 35px;
     font-weight: normal;
    color: var(--darkGreen);
 }
