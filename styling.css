@@ -621,7 +621,7 @@ footer{
 }
 
 /***** surface duo **/
-@media (max-width: 915px) and (min-width:530px)  {
+@media (max-width: 915px) and (min-width:540px)  {
 
     /******* Début A propos de moi *******/
     .names{
@@ -636,7 +636,7 @@ footer{
         font-size: 35px;
     }
     .quality{
-        font-size: 20px;
+        font-size: 24px;
     }
     .descrip b, .descrip{
         font-size: 20px;
@@ -657,7 +657,7 @@ footer{
     /******* fin  A propos de moi *******/
 }
 
-@media (max-width: 531px) and (min-width:415px) and (orientation:portrait){
+@media (max-width: 540px) and (min-width:415px) and (orientation:portrait){
     
     /***  debut A propos de moi **/
     .quality{
