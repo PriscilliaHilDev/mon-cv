@@ -20,6 +20,7 @@
     font-family: 'menuFont';
     src:  url('fonts/ShortStack-Regular.ttf')     
 }
+
 @font-face {
     font-family: 'descripFont';
     src:  url('fonts/OoohBaby-Regular.ttf')     
@@ -670,10 +671,10 @@ footer{
     
     /***  debut A propos de moi **/
     .quality{
-        font-size: 3.4vh;
+        font-size: 4.4vh;
     }
     .job{
-        font-size: 5.5vh;
+        font-size: 6vh;
     }
     .navIcon ul li a {
         font-size: 16vw ;
