@@ -468,10 +468,6 @@ body{
     background-color: var(--vertDark);
 }
 
-.realisations{
-    /* background-color: rgba(8, 92, 117, 0.3); */
-    background-color: var(--vertBleu);
-}
 
 .realisations a.firebase{
     color:var(--blackGreen);
@@ -494,6 +490,19 @@ body{
     padding-bottom: 20px;
 }
 
+.boutique {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 30px;
+}
+
+.food-app figure img{
+    border: 2px solid black;
+}
+
 .all-videos{
     display: flex;
     justify-content: space-evenly;
@@ -501,7 +510,7 @@ body{
     align-items: center;
 }
 
-.all-videos video{
+.all-videos video, .boutique video{
     border-radius: 10px;
     width: 400px;
     height: auto;
@@ -733,7 +742,7 @@ footer{
         padding-bottom: 0px;
     }
 
-    .all-videos video{
+    .all-videos video, .boutique video{
         width: 100%;
         height: auto;
     }
@@ -829,7 +838,7 @@ footer{
         font-size: 2.5vh;
     }
   
-    .all-videos video{
+    .all-videos video, .boutique video{
         margin-bottom: 20px;
         border-radius: 10px;
         width: 250px;
@@ -912,7 +921,7 @@ footer{
         font-size: 2.2vh;
     }
 
-    .all-videos video{
+    .all-videos video, .boutique video{
         margin-bottom: 20px;
         border-radius: 10px;
         width: 250px;
