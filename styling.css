@@ -187,9 +187,7 @@ body{
     width: 300px;
     border-radius:  50% ;
     border: 8px solid var(--vertDark);
-   
 }
-
 
 .navIcon ul{
     display: flex;
@@ -199,7 +197,7 @@ body{
 }
 
 .navIcon ul li a {
-    font-size: 13vh ;
+    font-size: 65px ;
     color:var(--vertDark)
 }
 
@@ -226,14 +224,14 @@ body{
 
 .job{
     font-family: "jobFont";
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
    color: var(--darkGreen);
 }
 
 .quality{
     font-family: "titleFont";
-    font-size: 21px;
+    font-size: 20px;
 }
 
 .descrip{
@@ -310,7 +308,7 @@ body{
     height: 100px;
     width: 150px;
     background-color: aliceblue;
-    box-shadow: 0.5px 0.5px 1px 0.2px rgba(0, 0, 0, 0.603);
+    box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
     margin: 10px;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -328,7 +326,7 @@ body{
     background-color: aliceblue;
     border-radius: 10px;
     margin: 15px;
-    box-shadow: 0.2px 0.2px 0.2px 0.2px rgba(0, 0, 0, 0.603);
+    box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
 }
 
 .progress div.fill{
@@ -404,7 +402,7 @@ body{
 
 .tools, .tools-php {
     background-color: aliceblue;
-    box-shadow: 0.2px 0.2px 1px 0.2px rgba(0, 0, 0, 0.603);
+    /* box-shadow: 0.2px 0.2px 1px 0.2px rgba(0, 0, 0, 0.603); */
     width: 150px;
     height: auto;
     margin: 10px;
@@ -413,6 +411,7 @@ body{
     justify-content: space-evenly;
     border-radius: 5px;
     padding: 5px;
+    box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
 }
 
 
@@ -442,7 +441,6 @@ body{
     margin: 10px;
 }
 
-
 /* fin test new style*/
 
 .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
@@ -453,23 +451,18 @@ body{
     font-size: calc(30px + 2vh);
 }
 
-.skills h1, .diplomes h1{
-    color:#fff
+.skills h1{
+    color:#fff;
 }
 
-.exp-pro h1{
+.exp-pro h1, .diplomes h1{
     color:var(--darkGreen);
 }
-
-.realisations h1{
-    color:var(--darkGreen)
-}
-
 
 /************ fin compétences *************/
 /********** debut experience********/
 .exp-pro{
-    background-color: var(--vertCard);
+    background-color: rgba(4, 230, 238, 0.3);
 }
 
 .all-exp{
@@ -482,7 +475,7 @@ body{
 .all-exp h2{
     padding-bottom: 10px;
     text-align: left;
-    font-size: 21px;
+    font-size: 17px;
     font-family: menuFont;
 }
 
@@ -502,16 +495,18 @@ body{
 }
 
 .exp-pro .exp{
-    border-radius: 15px ;
+    border-radius: 10px ;
     margin: 10px;
     width: 70%;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     text-align: justify;
     padding: 20px;
+    box-shadow: 2px 1px 0.5px 0.5px rgba(0, 0, 0, 0.603);
 }
 
 .exp-list{
     padding: 20px;
+    font-size: 15px;
 }
 
 .exp.exp1{
@@ -521,9 +516,6 @@ body{
 .exp.exp2{
     margin-bottom: 20px;
 }
-.all-exp{
-    background-color: rgba(144, 230, 243, 0.3);
-}
 
 .exp-list li{
     font-family: texte;
@@ -531,7 +523,7 @@ body{
 
 .exp h3{
     color: var(--vertDark);
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .exp h3 span{
@@ -550,168 +542,154 @@ body{
 /**************fin experience*********************/
 /**************debut réalisation*********************/
 
-
-.realisations a.firebase{
-    color:var(--blackGreen);
-    text-decoration:underline;
-    font-weight:bold;
+.realisations{
+    /* background-color: rgb(240, 255, 255);  */
+    background-color: var(--vertDark);
 }
-
-.realisations a.firebase:hover{
-    color: var(--vert);
-}
-
-.realisations p{
-    font-size: 17px;
-    font-family: texte;
-    padding-top: 10px;
-    text-align: center;
-    color: var(--blackGreen);
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 20px;
-}
-
-.boutique {
+.all-creations {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 30px;
 }
 
-.food-app figure img{
-    border: 2px solid black;
+.myfastfood{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: rgba(16, 112, 129, 0.8);
+    border-radius: 10px;
 }
 
-.all-videos{
+.food-project{
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
-.all-videos video, .boutique video{
+.realisations h1{
+    color: rgb(240, 255, 255);
+}
+
+.myfastfood h2{
+    padding: 5px;
+    color: #fff;
+    font-family: menuFont;
+    font-size: 17px;
+    text-align: center;
+}
+
+.food-app, .action-app{
+    width: 300px;
+}
+
+.food-video, .shop-project {
+    width: 450px;
+}
+
+.food-video, .food-app, .shop-project, .action-app{
+    background-color: #fff;
     border-radius: 10px;
+    height: auto;
+    box-shadow: 0.2px 0.2px 1px 0.2px rgba(0, 0, 0, 0.603);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.food-video video, .shop-project video{
     width: 400px;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
 }
 
- /* .action-true figure img, .food-app figure img, .action-true:hover h5, .food-app:hover h5{
-    display: block;
-    margin: 0 auto;
-}  */
-/* 
-.action-true figure h5, .food-app h5{
-    background-color: var(--blackGreen);
-} */
-
-.realisations a{
-    color: #fff;
+.food-app .logo-techno img, .myfastfood .logo-techno img, .action-app .logo-techno img, .descrip-food img, .logo-shop img{
+    width: 50px;
+    height: 50px;
+    align-self: center;
 }
 
-.realisations h2{
+.apk-img{
+    width: 200px;
+    height: auto;
+    box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
+    border-radius: 5px;
+}
+
+.descrip-food{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descrip-food p, .descrip-video p, .shop-project p, .action-app p{
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.descrip-food a, .action-app a{
+  font-family: menuFont;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: var(--vert);
+  padding: 10px;
+  border-radius: 5px;
+  color:  black;
+  margin-bottom: 10px;
+}
+
+.logo-techno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+}
+
+.action-app h2, .shop-project h2{
+    font-size: 15px;
     font-family: menuFont;
     text-align: center;
-    padding: 10px;
-    padding-bottom: 0px;
-    color: var(--vertDark);
+    padding: 15px;
+    padding-top: 0;
 }
 
-.langs-skills{
-    background-color: var(--vertCard);
+.descrip-food a{
+    align-self: center;
 }
 
-.content-lang h3{
-    text-transform: uppercase;
+.others-projects{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.content-lang p{
-    font-family: namesFont;
-    font-size: 25px;
-}
-
-.grid, .action-true{
-	position: relative;
-	margin:auto;
-	list-style: none;
-}
-.action-true figure img, .food-app figure img, .action-true:hover h5, .food-app:hover h5{
-    display: block;
-    margin: 0 auto;
-} 
-
-.action-true figure h5, .food-app h5{
-    background-color: var(--blackGreen);
-}
-
-/* position du texte par rapport à l'image */
-.grid figure figcaption,
-.grid figure figcaption {
-	position: absolute;
-	top: 0;
-	max-width: 80%;
-	max-height: 100%;
-    width: 80%;
-    height: 100%; 
-}
-
-/* animation image */
-.tools-skills figure img, .framework-skills figure img, .techno-skills figure img, .action-true figure img, .food-app figure img{
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	transform: translate3d(-10px,0,0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.skills figure img{
-    max-width: 145px;
-    max-height: 150px;
-    width: 145px;
-    height: 150px;
-}
-
-.tools-skills figure:hover img, .framework-skills figure:hover img , .techno-skills figure:hover img, .realisations figure:hover img {
-	opacity: 0.4;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-    background-color: rgba(255, 255, 255, 0.603);
-    border-radius: 10%;
-}
-
-.realisations figure img{
-    width: 250px;
-    border-radius: 10px;
-}
-
-.tools-skills figure h5, .framework-skills figure h5, .techno-skills figure h5, .action-true figure h5, .food-app h5 {
-    position: relative;
-	opacity: 0;
-    background-color: var(--vertDark);
-    padding: 10px;
-    width: 145px;
-    border-radius: 5px;
-    color:#fff;
-    text-align: center;
-}
-
-.tools-skills figure:hover h5, .framework-skills figure:hover h5, .techno-skills figure:hover h5, .action-true figure:hover h5, .food-app:hover h5{
-	opacity: 1;	
-    position: relative;
-    top: 50%;
-    transform: perspective(50px) translateY(-50%);
-}
-
-.techno-skills figure:hover h5{
-    font-size: 30px;
-}
-.framework-skills figure:hover h5, .tools-skills figure:hover h5, .action-true figure:hover h5, .food-app:hover h5{
-    font-size: 20px;
-}
 /******************realisation fin ************************/
 /******************début diplomes *************************/
+
+@media (max-width:1086px) {
+    .others-projects{
+        justify-content: center;
+    }
+}
 
 @media (min-width:675px) {
     .dip-col2, .dip-col1{
@@ -720,7 +698,7 @@ body{
 }
 
 .diplomes{
-    background-color: var(--vertDark);
+    background-color: var(--vert);
     padding-bottom: 20px;
 }
 
@@ -757,13 +735,13 @@ body{
 /******************début Loisirs *************************/
 .loisirs{
    height: auto;
-   background-color: var(--vertDark);
+   background-color: var(--vert);
 }
 
 .loisirs h2{
     margin-left: 5%;
     font-family: "titleFont";
-    color: #fff;
+    color: var(--blackGreen);
     font-size: 28px;
 }
 
@@ -772,7 +750,7 @@ body{
     padding: 20px;
     font-family: menuFont;
     font-size: 17px;
-    color: #fff;
+    color: snow;
 }
 .loisirs i{
     color: var(--vert);
@@ -787,72 +765,34 @@ footer{
 
 /****************** fin Loisirs *************************/
 /****************** début responsives values *************************/
+@media only screen and (max-width:740px) {
+    .myfastfood{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media only screen and (max-width:1114px) {
+    .food-project{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .myfastfood{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .shop-project video, .food-project video{
+       width: 350px;
+    }
+    .shop-project, .food-video{
+        width: 400px;
+    }
+}
+
 
 /*** mode  paysage ecran pc ***/
-
-@media (max-width: 912px) and (min-width:530px)  and (orientation:landscape){
-    .navIcon ul li a {
-        font-size: 14vw ;
-    }
-    .quality{
-        font-size: 22px;
-    }
-    .content-lang p{
-        font-size: 7vh;
-    }
-}
-
-/***** surface duo **/
-@media (max-width: 915px) and (min-width:540px)  {
-
-    /******* Début A propos de moi *******/
-    .names{
-       font-size: 65px;
-    }
-   
-    .infos{
-        position: relative;
-        bottom:8%;
-    }
-    .job{
-        font-size: 35px;
-    }
-    .quality{
-        font-size: 24px;
-    }
-    .descrip b, .descrip{
-        font-size: 20px;
-    }
-    .aboutMe{
-        padding-bottom: 0px;
-        height: auto;
-    }
-    .navIcon ul li a {
-        font-size: 85px ;
-        padding: 0;
-    }
-    .portrait{
-       height: auto;
-       padding-top: 3vh;
-       padding-bottom: 3vh;
-    }
-    /******* fin  A propos de moi *******/
-}
-
-@media (max-width: 540px) and (min-width:415px) and (orientation:portrait){
-    
-    /***  debut A propos de moi **/
-    .quality{
-        font-size: 4.4vh;
-    }
-    .job{
-        font-size: 6vh;
-    }
-    .navIcon ul li a {
-        font-size: 16vw ;
-    }
-    /*** fin A propos de moi **/
-}
 
 @media only screen and (max-width:414px) {
   .persoImg{
@@ -1030,10 +970,6 @@ footer{
         text-align: center;
     }
 
-    /* .lang h3, .lang p{
-        text-align: center;
-    } */
-    
     /*** fin compétences  **/
     /*** début expérience **/
 

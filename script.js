@@ -50,7 +50,8 @@ window.onscroll = () => {
     }
 }
 
-console.log(sectionSkills.clientWidth)
+console.log(document.querySelector('.myfastfood').clientWidth)
+
 
 // function isElementInViewport(el) {
 //     var rect = el.getBoundingClientRect();
