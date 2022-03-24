@@ -748,7 +748,7 @@ body{
     text-align: center;
     padding: 20px;
     font-family: menuFont;
-    font-size: 17px;
+    font-size: 15px;
     color: snow;
 }
 .loisirs i{
@@ -1067,6 +1067,9 @@ footer{
         font-size: 15px;
     }
     /** fin diplomes */
+    .loisirs h2{
+        font-size: 20px;
+    }
  
 }
 
