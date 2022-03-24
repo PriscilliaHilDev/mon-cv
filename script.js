@@ -50,7 +50,7 @@ window.onscroll = () => {
     }
 }
 
-console.log(document.querySelector('.myfastfood').clientWidth)
+
 
 
 // function isElementInViewport(el) {
