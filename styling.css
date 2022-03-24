@@ -912,7 +912,6 @@ footer{
         font-size: 20px;
     }
     
-
     /*** fin compétences  **/
     
     /**  debut realisations **/
@@ -963,7 +962,7 @@ footer{
 
     /*** A propos de moi **/
     .names{
-        font-size: 6vh;
+        font-size: 35px;
     }
 
     .persoImg{
@@ -971,17 +970,17 @@ footer{
     }
 
     .job{
-        font-size: 3.5vh;
+        font-size: 18px;
     }
     .quality{
-        font-size: 2.5vh;
+        font-size: 15px;
     }
 
     .descrip, .descrip b, .dip p, .loisirs p, .realisations p, .exp-list li, .content-lang p{
-        font-size: 2.1vh;
+        font-size: 12px;
     }
     .navIcon ul li a {
-        font-size: 22vw ;
+        font-size: 35px ;
     }
 
     /*** fin A propos de moi ***/
@@ -1006,6 +1005,10 @@ footer{
         text-align: center;
     }
 
+    .techno-skills h2, .all-tools h2{
+        font-size: 18px;
+    }
+
     /*** fin compétences  **/
     /*** début expérience **/
 
@@ -1021,6 +1024,10 @@ footer{
     /*** fin expérience **/
     /**  debut realisations **/
     
+    .realisations h2{
+        font-size: 14px;
+    }
+
     .logo-shop{
         padding: 10px;
     }
