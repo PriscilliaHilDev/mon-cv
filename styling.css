@@ -451,9 +451,20 @@ body{
     text-align: center;
     padding: 20px;
     font-family: titleFont;
-    color:#fff;
     font-weight: 800;
     font-size: calc(30px + 2vh);
+}
+
+.skills h1, .diplomes h1{
+    color:#fff
+}
+
+.exp-pro h1{
+    color:var(--darkGreen);
+}
+
+.realisations h1{
+    color:var(--darkGreen)
 }
 
 .langs-skills{
@@ -543,7 +554,7 @@ body{
 /************ fin compétences *************/
 /********** debut experience********/
 .exp-pro{
-    background-color: var(--vertDark);
+    background-color: var(--vertCard);
 }
 
 .all-exp{
@@ -624,9 +635,6 @@ body{
 /**************fin experience*********************/
 /**************debut réalisation*********************/
 
-.realisations .title{
-    background-color: var(--vertDark);
-}
 
 .realisations a.firebase{
     color:var(--blackGreen);
