@@ -950,6 +950,12 @@ footer{
         padding: 10px;
     }
     /**  fin realisations **/
+    /** début diplomes */
+
+    .dip p.title{
+        font-size: 16px;
+    }
+    /** fin diplomes */
 }
 
 /**** les plus petites tailles d'écrans galaxy fold *****/
@@ -1024,8 +1030,8 @@ footer{
     } 
 
     .myfastfood, .others-projects{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .all-creations p{
@@ -1033,11 +1039,11 @@ footer{
     }
     
     .shop-project video, .food-project video{
-        width: 250px;
+        width: 220px;
     }
 
     .shop-project, .food-video{
-        width: 400px;
+        width: 250px;
     }
 
     .others-projects{
@@ -1048,6 +1054,12 @@ footer{
         padding: 10px;
     }
     /**  fin realisations **/
+    /** début diplomes */
+
+    .dip p.title{
+        font-size: 15px;
+    }
+    /** fin diplomes */
  
 }
 
