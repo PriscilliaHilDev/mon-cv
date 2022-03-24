@@ -37,7 +37,7 @@
 }
 @font-face {
     font-family: 'qualityFont';
-    src:  url('fonts/Hubballi-Regular.ttf')     
+    src:  url('fonts/ShortStack-Regular.ttf')     
 }
 
 @font-face {
@@ -223,21 +223,20 @@ body{
 }
 
 .job{
-    font-family: "jobFont";
     font-size: 28px;
     font-weight: normal;
-   color: var(--darkGreen);
+    color: var(--darkGreen);
 }
 
 .quality{
-    font-family: "titleFont";
-    font-size: 20px;
+    font-family: "descripFont";
+    font-size: 22px;
+    font-weight: normal;
 }
 
 .descrip{
-    font-family: 'menuFont';
     font-size: 18px;
-    padding-top: 20px;
+    padding-top: 20px;  
 }
 
 .descrip b {
@@ -817,7 +816,7 @@ footer{
     }
 
     .job{
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .descrip, .descrip b {
@@ -870,7 +869,7 @@ footer{
     }
 
     .job{
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .quality{
@@ -973,7 +972,7 @@ footer{
         font-size: 18px;
     }
     .quality{
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .descrip, .descrip b, .dip p, .loisirs p, .realisations p, .exp-list li, .content-lang p{
