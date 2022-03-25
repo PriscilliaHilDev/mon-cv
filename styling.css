@@ -234,8 +234,8 @@ body{
 }
 
 .quality{
-    font-family: "descripFont";
-    font-size: 22px;
+    font-family: "titleFont";
+    font-size: 19px;
     font-weight: normal;
 }
 
@@ -817,11 +817,11 @@ footer{
 
     .names{
         padding-bottom: 10px;
-        font-size: 50px;
+        font-size: 52px;
     }
 
     .quality{
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .job{
@@ -881,11 +881,11 @@ footer{
     }
 
     .job{
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .quality{
-        font-size: 16.5px;
+        font-size: 15px;
     }
 
     .descrip, .descrip b, .dip p, .loisirs p, .realisations p, .exp-list li, .content-lang p{
@@ -893,7 +893,7 @@ footer{
     }
 
     .navIcon ul li a {
-        font-size: 40px ;
+        font-size: 42px ;
     }
 
     /*** fin A propos de moi ***/
@@ -981,17 +981,17 @@ footer{
     }
 
     .job{
-        font-size: 18px;
+        font-size: 17px;
     }
     .quality{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .descrip, .descrip b, .dip p, .loisirs p, .realisations p, .exp-list li, .content-lang p{
-        font-size: 12px;
+        font-size: 13px;
     }
     .navIcon ul li a {
-        font-size: 38px ;
+        font-size: 39px ;
     }
 
     /*** fin A propos de moi ***/
