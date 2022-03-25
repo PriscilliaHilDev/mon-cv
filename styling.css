@@ -828,8 +828,8 @@ footer{
         font-size: 22px;
     }
 
-    .descrip, .descrip b {
-        font-size: 15px;
+    .descrip, .descrip b, .exp-list li {
+        font-size: 16px;
     }
     /**** fin a propros de moi****/
 
@@ -862,10 +862,13 @@ footer{
     }
 
     .logo-shop{
-        padding: 10px;
+        padding: 5px;
     }
 
      /**  fin realisations **/
+     .dip p.title{
+        font-size: 15.5px;
+    }
  
 }
 
@@ -882,11 +885,11 @@ footer{
     }
 
     .quality{
-        font-size: 16px;
+        font-size: 16.5px;
     }
 
     .descrip, .descrip b, .dip p, .loisirs p, .realisations p, .exp-list li, .content-lang p{
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .navIcon ul li a {
