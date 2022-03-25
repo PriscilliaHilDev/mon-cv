@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html,body{
+    width:100%;
+    overflow-x:hidden;
+}
+
 :root{
     --vertBleu : #B1F0EB;
     --vert:#48C9B0;
