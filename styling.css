@@ -698,6 +698,7 @@ body{
     .dip-col2, .dip-col1{
         grid-template-columns: repeat(auto-fill, 45%) ;
     }
+   
 }
 
 .diplomes{
@@ -772,6 +773,9 @@ footer{
     .myfastfood{
         margin-left: 5%;
         margin-right: 5%;
+    }
+    .loisirs h2{
+        text-align: center;
     }
 }
 
