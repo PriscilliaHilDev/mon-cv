@@ -237,6 +237,7 @@ body{
     font-family: "titleFont";
     font-size: 19px;
     font-weight: normal;
+    color: var(--vertDark);
 }
 
 .descrip{
