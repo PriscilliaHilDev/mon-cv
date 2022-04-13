@@ -171,7 +171,7 @@ body{
 .portrait{
     display: flex; 
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: auto;
 }
@@ -185,6 +185,8 @@ body{
 @media (min-width:1010px) {
     .portrait{
         height: 90vh;
+        width: 1000px;
+        margin: 0 auto;
     }
 }
 
@@ -202,7 +204,7 @@ body{
 }
 
 .navIcon ul li a {
-    font-size: 65px ;
+    font-size: 75px ;
     color:var(--vertDark)
 }
 
@@ -228,20 +230,20 @@ body{
 }
 
 .job{
-    font-size: 28px;
+    font-size: 30px;
     font-weight: normal;
     color: var(--darkGreen);
 }
 
 .quality{
     font-family: "titleFont";
-    font-size: 19px;
+    font-size: 22px;
     font-weight: normal;
     color: var(--vertDark);
 }
 
 .descrip{
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 20px;  
 }
 
@@ -388,17 +390,21 @@ body{
     margin-right: 10%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding-bottom: 20px;
 }
 
 .skills-tools .groupe{
    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+   flex-wrap: wrap;
     width: 100%;
+}
+
+.skills-lang{
+    align-self: center;
+    justify-content: center;
+    margin: 50px;
 }
 
 .tools h5, .tools-php h5{
@@ -434,11 +440,13 @@ body{
     text-align: left;
     font-family: menuFont;
     font-weight: normal;
+    font-size: 20px;
 }
 
 .lang p{
     color:var(--vert);
     text-align: left; 
+    font-size: 18px;
 }
 
 .lang{
@@ -479,7 +487,7 @@ body{
 .all-exp h2{
     padding-bottom: 10px;
     text-align: left;
-    font-size: 17px;
+    font-size: 23px;
     font-family: menuFont;
 }
 
@@ -510,7 +518,7 @@ body{
 
 .exp-list{
     padding: 20px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .exp.exp2{
@@ -523,7 +531,7 @@ body{
 
 .exp h3{
     color: var(--vertDark);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .exp h3 span{
@@ -563,7 +571,7 @@ body{
 .food-project{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -575,17 +583,30 @@ body{
     padding: 5px;
     color: #fff;
     font-family: menuFont;
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
 }
 
-.food-app, .action-app{
-    width: 300px;
+@media (min-width:1114px) {
+    .food-app, .action-app{
+        width: 25vw;
+    }
+    
+    .food-video, .shop-project {
+        width: 40vw;
+    }
+}
+@media (max-width:1113px) {
+    .food-app, .action-app{
+        width: 300px;
+    }
+    
+    .food-video, .shop-project {
+        width: 450px;
+    }
 }
 
-.food-video, .shop-project {
-    width: 450px;
-}
+
 
 .food-video, .food-app, .shop-project, .action-app{
     background-color: #fff;
@@ -630,7 +651,7 @@ body{
 
 .all-creations p{
     text-align: center;
-    padding: 20px;
+    padding: 22px;
 }
 
 .descrip-food a, .action-app a{
@@ -659,7 +680,7 @@ body{
 }
 
 .action-app h2, .shop-project h2{
-    font-size: 15px;
+    font-size: 18px;
     font-family: menuFont;
     text-align: center;
     padding: 15px;
@@ -712,7 +733,7 @@ body{
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.603);
+    box-shadow: 2px 1px 0px 0px rgba(0, 0, 0, 0.603);
 }
 
 .dip-col2, .dip-col1{
@@ -755,7 +776,7 @@ body{
     text-align: center;
     padding: 20px;
     font-family: menuFont;
-    font-size: 15px;
+    font-size: 18px;
     color: snow;
 }
 .loisirs i{
