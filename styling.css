@@ -230,20 +230,20 @@ body{
 }
 
 .job{
-    font-size: 30px;
+    font-size: 27px;
     font-weight: normal;
     color: var(--darkGreen);
 }
 
 .quality{
     font-family: "titleFont";
-    font-size: 22px;
+    font-size: 20px;
     font-weight: normal;
     color: var(--vertDark);
 }
 
 .descrip{
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 20px;  
 }
 
@@ -374,16 +374,12 @@ body{
 }
 
 
-.techno-skills h2{
+.techno-skills h2, .all-tools h2{
     text-align: center;
     color:var(--vertLight);   
 }
 
-.all-tools h2{
-    text-align: center;
-    padding: 10px;
-    color:var(--vertLight);   
-}
+
 
 .all-tools{
     margin-left: 10%;
@@ -399,12 +395,14 @@ body{
    display: flex;
    flex-wrap: wrap;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .skills-lang{
     align-self: center;
     justify-content: center;
-    margin: 50px;
+    margin: 35px;
 }
 
 .tools h5, .tools-php h5{
@@ -440,13 +438,13 @@ body{
     text-align: left;
     font-family: menuFont;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .lang p{
     color:var(--vert);
     text-align: left; 
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .lang{
@@ -487,7 +485,7 @@ body{
 .all-exp h2{
     padding-bottom: 10px;
     text-align: left;
-    font-size: 23px;
+    font-size: 18px;
     font-family: menuFont;
 }
 
@@ -518,7 +516,7 @@ body{
 
 .exp-list{
     padding: 20px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .exp.exp2{
@@ -531,7 +529,7 @@ body{
 
 .exp h3{
     color: var(--vertDark);
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .exp h3 span{
@@ -583,7 +581,7 @@ body{
     padding: 5px;
     color: #fff;
     font-family: menuFont;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
 }
 
@@ -652,6 +650,7 @@ body{
 .all-creations p{
     text-align: center;
     padding: 22px;
+    font-size: 16px;
 }
 
 .descrip-food a, .action-app a{
@@ -680,7 +679,7 @@ body{
 }
 
 .action-app h2, .shop-project h2{
-    font-size: 18px;
+    font-size: 17px;
     font-family: menuFont;
     text-align: center;
     padding: 15px;
