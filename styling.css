@@ -504,6 +504,14 @@ body{
     font-weight: bold;
 }
 
+.all-exp p.more-infos {
+    font-family: texte;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 .exp-pro .exp{
     border-radius: 10px ;
     margin: 10px;
