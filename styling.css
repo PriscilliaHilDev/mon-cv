@@ -69,7 +69,7 @@ body{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    font-family: 'menuFont';
+    font-family: 'texte';
     background-color: rgb(0, 86, 98,0.6);
     border-bottom: #fff 2px solid;
 }
@@ -91,7 +91,6 @@ body{
 .navbar ul .navLink a{
     padding: 1rem;
     color: #fff;
-    font-weight: 800;
 }
 
 .navbar ul .navLink:hover a {
@@ -270,14 +269,15 @@ body{
 
 .descrip{
     font-size: 20px;
-    padding-top: 20px;  
+    padding-top: 20px; 
+    color: var(--darkGreen); 
 }
 
-.descrip b {
+/* .descrip b {
     color: var(--vert);
     text-decoration: underline;
     text-decoration-color: black;
-}
+} */
 
 /************ fin A propros de moi ***********/
 /************ début mes compétences ***********/
@@ -512,7 +512,6 @@ body{
     padding-bottom: 10px;
     text-align: left;
     font-size: 18px;
-    font-family: menuFont;
 }
 
 .all-exp a{
@@ -526,8 +525,7 @@ body{
 }
 
 .all-exp p {
-    font-family: titleFont;
-    font-weight: bold;
+    color:#005662
 }
 
 .all-exp p.more-infos {
@@ -789,7 +787,6 @@ body{
     font-weight: bold;
     font-size: 19px;
     color: var(--vertDark);
-    font-family: menuFont
 }
 
 .dip i{
@@ -817,11 +814,11 @@ body{
 }
 
 .loisirs p{
-    text-align: center;
     padding: 20px;
-    font-family: menuFont;
     font-size: 18px;
     color: snow;
+    margin-left: 5%;
+
 }
 .loisirs i{
     color: var(--vert);
