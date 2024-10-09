@@ -740,7 +740,7 @@ body{
     margin-top: 20px;
     margin-bottom: 40px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     padding: 10px;
 }
