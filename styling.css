@@ -167,24 +167,13 @@ body{
     background-image: url(/img/flowers-g397c6e6aa_1920.jpg);
     background-size: cover;
 }
-/* .portrait{
+.portrait{
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-} */
-
-.portrait {
-    display: flex;
-    align-items: center; /* Aligne verticalement l'image et le texte */
-    gap: 50px; /* Espace arrondi entre l'image et le texte */
 }
 
-.persoImg{
-    width: 350px;
-    border-radius:  50% ;
-    border: 8px solid var(--vertDark);
-}
 
 
 /* Lorsque la largeur est inférieure ou égale à 1300px */
@@ -227,11 +216,11 @@ body{
 }
 
 
-/* .persoImg{
+.persoImg{
     width: 350px;
     border-radius:  50% ;
     border: 8px solid var(--vertDark);
-} */
+}
 
 .navIcon ul{
     display: flex;
