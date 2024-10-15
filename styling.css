@@ -272,872 +272,884 @@ body{
     font-size: 20px;
     padding-top: 20px;  
 }
-
-.descrip b {
+/* .descrip b {
     color: var(--vert);
     text-decoration: underline;
     text-decoration-color: black;
-}
+} */
 
 /************ fin A propros de moi ***********/
 /************ début mes compétences ***********/
 
 @media (max-width:675px) {
-   .grid{
-       display: flex;
-       justify-content: center;
-       flex-basis: 50%;
-   } 
-
-   .dip-col2, .dip-col1{
-      grid-template-columns: repeat(auto-fill, 80%) ;
-   }  
-}
-
-/** debut test new style **/
-
-.title-skills{
-    background-color: var(--vertDark);
-}
-
-.skills{
-    background-color: var(--vertDark);
-}
-
-.techno-skills{
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;   
-    align-items: center;
-}
-
-.skills-1{
-    padding: 40px;
-    width: 370px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
-}
-
-.skills-2{
-    height: auto;
-    width: auto;
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-    justify-content: center;
-}
-
-.skills .group{
-    display: flex;
-}
-
-.skills-2 .framework{
-    height: 100px;
-    width: 150px;
-    background-color: aliceblue;
-    box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
-    margin: 10px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.progress{
-    position: relative;
-    width: 100%;
-    height: 20px;
-    background-color: aliceblue;
-    border-radius: 10px;
-    margin: 15px;
-    box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
-}
-
-.progress div.fill{
-    width: 10%;
-    height: 100%;
-    background-color: var(--vert);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    transition: all 0.9s;
-}
-
-.progress span.text{
-    position: absolute;
-    right: 5px;
-    top:5%;
-    transform: translate(-50%);
-}
-
-.skills-1 .title{
-    font-weight: bold;
-    text-align: left;
-    align-self: flex-start;
-    position: relative;
-    top:10px;
-    color:aliceblue;   
-}
-
-.framework img{
-    width: 50px;
-    height: 50px;
-    align-items: center;
-}
-
-.framework h5{
-    font-family: "menuFont";
-    padding: 5px;
-    padding-bottom: 0px;
-}
-
-
-.techno-skills h2, .all-tools h2{
-    text-align: center;
-    color:var(--vertLight);   
-}
-
-
-
-.all-tools{
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-}
-
-.skills-tools .groupe{
-   display: flex;
-   flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.skills-lang{
-    align-self: center;
-    justify-content: center;
-    margin: 35px;
-}
-
-.tools h5, .tools-php h5{
-    font-family: menuFont;
-}
-
-.tools, .tools-php {
-    background-color: aliceblue;
-    /* box-shadow: 0.2px 0.2px 1px 0.2px rgba(0, 0, 0, 0.603); */
-    width: 150px;
-    height: auto;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    padding: 5px;
-    box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
-}
-
-.skills-tools .tools img{
-    width: 50px;
-    height: 50px;
-}
-
-.tools-php img{
-    width: 70px;
-    height: 50px;
-}
-
-.lang h3{
-    color:aliceblue;
-    text-align: left;
-    font-family: menuFont;
-    font-weight: normal;
-    font-size: 18px;
-}
-
-.lang p{
-    color:var(--vert);
-    text-align: left; 
-    font-size: 16px;
-}
-
-.lang{
-    margin: 10px;
-}
-
-/* fin test new style*/
-
-.skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
-    text-align: center;
-    padding: 20px;
-    font-family: titleFont;
-    font-weight: 800;
-    font-size: calc(30px + 2vh);
-}
-
-.skills h1{
-    color:#fff;
-}
-
-.exp-pro h1, .diplomes h1{
-    color:var(--darkGreen);
-}
-
-/************ fin compétences *************/
-/********** debut experience********/
-.exp-pro{
-    background-color: rgba(4, 230, 238, 0.3);
-}
-
-.all-exp{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
-}
-
-.all-exp h2{
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 18px;
-    font-family: menuFont;
-}
-
-.all-exp a{
-    color: var(--vert);
-    font-weight: bold;
-}
-
-.all-exp a:hover{
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.all-exp p {
-    font-family: titleFont;
-    font-weight: bold;
-}
-
-.all-exp p.more-infos {
-    font-family: texte;
-    font-style: italic;
-    font-weight: normal;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.exp-pro .exp{
-    border-radius: 10px ;
-    margin: 10px;
-    width: 70%;
-    background-color: rgb(255, 255, 255);
-    text-align: justify;
-    padding: 20px;
-    box-shadow: 1px 1px 0.5px 0px rgba(0, 0, 0, 0.603);
-}
-
-.exp-list{
-    padding: 20px;
-    font-size: 17px;
-}
-
-.exp.exp2{
-    margin-bottom: 20px;
-}
-
-.exp-list li{
-    font-family: texte;
-}
-
-.exp h3{
-    color: var(--vertDark);
-    font-size: 17px;
-}
-
-.exp h3 span{
-  text-decoration: underline;
-}
-
-.exp-list span{
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.exp-list b{
-    color: var(--vert);
-}
-
-/**************fin experience*********************/
-/**************debut réalisation*********************/
-
-.realisations{
-    /* background-color: rgb(240, 255, 255);  */
-    background-color: var(--vertDark);
-}
-.all-creations {
-    display: flex;
-    flex-direction: column;
-}
-
-.myfastfood{
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 10px;
-    padding-bottom: 20px;
-    background-color: rgba(16, 112, 129, 0.8);
-    border-radius: 10px;
-}
-
-.food-project{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.realisations h1{
-    color: rgb(240, 255, 255);
-}
-
-.myfastfood h2{
-    padding: 5px;
-    color: #fff;
-    font-family: menuFont;
-    font-size: 17px;
-    text-align: center;
-}
-
-@media (min-width:1114px) {
-    .food-app, .action-app{
-        width: 25vw;
-    }
-    
-    .food-video, .shop-project {
-        width: 40vw;
-    }
-}
-@media (max-width:1113px) {
-    .food-app, .action-app{
-        width: 300px;
-    }
-    
-    .food-video, .shop-project {
-        width: 450px;
-    }
-}
-
-
-
-.food-video, .food-app, .shop-project, .action-app{
-    background-color: #fff;
-    border-radius: 10px;
-    height: auto;
-    box-shadow: 0.2px 0.2px 1px 0.2px rgba(0, 0, 0, 0.603);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    padding-top: 20px;
-    margin-top: 20px;
-}
-
-.food-video video, .shop-project video{
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
-}
-
-.food-app .logo-techno img, .myfastfood .logo-techno img, .action-app .logo-techno img, .descrip-food img, .logo-shop img{
-    width: 50px;
-    height: 50px;
-    align-self: center;
-}
-
-.apk-img{
-    width: 200px;
-    height: auto;
-    box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
-    border-radius: 5px;
-}
-
-.descrip-food{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.all-creations p{
-    text-align: center;
-    padding: 22px;
-    font-size: 16px;
-}
-
-.descrip-food a, .action-app a{
-  font-family: menuFont;
-  font-weight: bold;
-  border-radius: 10px;
-  background-color: var(--vert);
-  padding: 10px;
-  border-radius: 5px;
-  color:  black;
-  margin-bottom: 10px;
-}
-
-.logo-techno{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo-shop{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 50px 0px 50px;
-}
-
-.action-app h2, .shop-project h2{
-    font-size: 17px;
-    font-family: menuFont;
-    text-align: center;
-    padding: 15px;
-    padding-top: 0;
-}
-
-.descrip-food a{
-    align-self: center;
-}
-
-.others-projects{
-    margin-left: 15%;
-    margin-right: 15%;
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-/******************realisation fin ************************/
-/******************début diplomes *************************/
-
-@media (max-width:1086px) {
-    .others-projects{
+    .grid{
+        display: flex;
         justify-content: center;
-    }
-    .skills-1{
-        padding-top:0px ;
-        padding-bottom: 5px;
-    }
-}
-
-@media (min-width:675px) {
+        flex-basis: 50%;
+    } 
+ 
     .dip-col2, .dip-col1{
-        grid-template-columns: repeat(auto-fill, 45%) ;
-    }
-   
-}
-
-.diplomes{
+       grid-template-columns: repeat(auto-fill, 80%) ;
+    }  
+ }
+ 
+ /** debut test new style **/
+ 
+ .title-skills{
+     background-color: var(--vertDark);
+ }
+ 
+ .skills{
+     background-color: var(--vertDark);
+ }
+ 
+ .techno-skills{
+     margin-left: 10%;
+     margin-right: 10%;
+     display: flex;
+     flex-wrap: wrap; 
+     justify-content: center;   
+     align-items: center;
+ }
+ 
+ .skills-1{
+     padding: 40px;
+     width: 370px;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;  
+ }
+ 
+ .skills-2{
+     height: auto;
+     width: auto;
+     padding: 35px;
+     display: flex;
+     flex-direction: column;
+     padding-top: 15px;
+     justify-content: center;
+ }
+ 
+ .skills .group{
+     display: flex;
+ }
+ 
+ .skills-2 .framework{
+     height: 100px;
+     width: 150px;
+     background-color: aliceblue;
+     box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
+     margin: 10px;
+     margin-bottom: 0px;
+     margin-top: 10px;
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+ }
+ 
+ .progress{
+     position: relative;
+     width: 100%;
+     height: 20px;
+     background-color: aliceblue;
+     border-radius: 10px;
+     margin: 15px;
+     box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
+ }
+ 
+ .progress div.fill{
+     width: 10%;
+     height: 100%;
+     background-color: var(--vert);
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+     transition: all 0.9s;
+ }
+ 
+ .progress span.text{
+     position: absolute;
+     right: 5px;
+     top:5%;
+     transform: translate(-50%);
+ }
+ 
+ .skills-1 .title{
+     font-weight: bold;
+     text-align: left;
+     align-self: flex-start;
+     position: relative;
+     top:10px;
+     color:aliceblue;   
+ }
+ 
+ .framework img{
+     width: 50px;
+     height: 50px;
+     align-items: center;
+ }
+ 
+ .framework h5{
+     font-family: "menuFont";
+     padding: 5px;
+     padding-bottom: 0px;
+ }
+ 
+ 
+ .techno-skills h2, .all-tools h2{
+     text-align: center;
+     color:var(--vertLight);   
+ }
+ 
+ 
+ 
+ .all-tools{
+     margin-left: 10%;
+     margin-right: 10%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 20px;
+ }
+ 
+ .skills-tools .groupe{
+    display: flex;
+    flex-wrap: wrap;
+     width: 100%;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .skills-lang{
+     align-self: center;
+     justify-content: center;
+     margin: 35px;
+ }
+ 
+ .tools h5, .tools-php h5{
+     font-family: menuFont;
+ }
+ 
+ .tools, .tools-php {
+     background-color: aliceblue;
+     /* box-shadow: 0.2px 0.2px 1px 0.2px rgba(0, 0, 0, 0.603); */
+     width: 150px;
+     height: auto;
+     margin: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     border-radius: 5px;
+     padding: 5px;
+     box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
+ }
+ 
+ .skills-tools .tools img{
+     width: 50px;
+     height: 50px;
+ }
+ 
+ .tools-php img{
+     width: 70px;
+     height: 50px;
+ }
+ 
+ .lang h3{
+     color:aliceblue;
+     text-align: left;
+     font-family: menuFont;
+     font-weight: normal;
+     font-size: 18px;
+ }
+ 
+ .lang p{
+     color:var(--vert);
+     text-align: left; 
+     font-size: 16px;
+ }
+ 
+ .lang{
+     margin: 10px;
+ }
+ 
+ /* fin test new style*/
+ 
+ .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
+     text-align: center;
+     padding: 20px;
+     font-family: titleFont;
+     font-weight: 800;
+     font-size: calc(30px + 2vh);
+ }
+ 
+ .skills h1{
+     color:#fff;
+ }
+ 
+ .exp-pro h1, .diplomes h1{
+     color:var(--darkGreen);
+ }
+ 
+ /************ fin compétences *************/
+ /********** debut experience********/
+ .exp-pro{
+     background-color: rgba(4, 230, 238, 0.3);
+ }
+ 
+ .all-exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ .all-exp h2{
+     padding-bottom: 10px;
+     text-align: left;
+     font-size: 18px;
+ }
+ 
+ .all-exp a{
+     color: var(--vert);
+     font-weight: bold;
+ }
+ 
+ .all-exp a:hover{
+     text-decoration: underline;
+     font-weight: bold;
+ }
+ 
+ .all-exp p {
+     color:#005662
+ }
+ 
+ .all-exp p.more-infos {
+     font-family: texte;
+     font-style: italic;
+     font-weight: normal;
+     text-align: center;
+     padding-bottom: 20px;
+ }
+ 
+ .exp-pro .exp{
+     border-radius: 10px ;
+     margin: 10px;
+     width: 70%;
+     background-color: rgb(255, 255, 255);
+     text-align: justify;
+     padding: 20px;
+     box-shadow: 1px 1px 0.5px 0px rgba(0, 0, 0, 0.603);
+ }
+ 
+ .exp-list{
+     padding: 20px;
+     font-size: 17px;
+ }
+ 
+ .exp.exp2{
+     margin-bottom: 20px;
+ }
+ 
+ .exp-list li{
+     font-family: texte;
+ }
+ 
+ .exp h3{
+     color: var(--vertDark);
+     font-size: 17px;
+ }
+ 
+ .exp h3 span{
+   text-decoration: underline;
+ }
+ 
+ .exp-list span{
+     font-weight: bold;
+     text-decoration: underline;
+ }
+ 
+ .exp-list b{
+     color: var(--vert);
+ }
+ 
+ /**************fin experience*********************/
+ /**************debut réalisation*********************/
+ 
+ .realisations{
+     /* background-color: rgb(240, 255, 255);  */
+     background-color: var(--vertDark);
+     padding-bottom: 50px;
+ }
+ .all-creations {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .myfastfood{
+     margin-left: 15%;
+     margin-right: 15%;
+     padding: 20px;
+     background-color: rgba(16, 112, 129, 0.8);
+     border-radius: 10px;
+ }
+ 
+ .food-project{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+ }
+ 
+ .realisations h1{
+     color: rgb(240, 255, 255);
+ }
+ 
+ .myfastfood h2{
+     padding: 5px;
+     color: #fff;
+     font-family: menuFont;
+     font-size: 17px;
+     text-align: center;
+ }
+ 
+ @media (min-width:1114px) {
+     .food-app{
+         width: 25vw;
+     }
+     
+     .food-video, .blog-project, .food-mobile {
+         width: 40vw;
+     }
+ }
+ @media (max-width:1113px) {
+     .food-app{
+         width: 300px;
+     }
+     
+     .food-video, .blog-project, .food-mobile{
+         width: 450px;
+     }
+ }
+ 
+ .food-video, .food-app, .blog-project, .food-mobile{
+     background-color: #fff;
+     border-radius: 10px;
+     height: auto;
+     box-shadow: 0.2px 0.2px 1px 0.2px rgba(0, 0, 0, 0.603);
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     padding: 10px;
+     padding-top: 20px;
+     margin-top: 20px;
+ }
+ 
+ 
+ .food-video video, .blog-project video{
+     width: 400px;
+     height: auto;
+     border-radius: 10px;
+     box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
+ }
+ 
+ .food-mobile video{
+     width: 200px;
+     height: 400;
+     border-radius: 10px;
+     box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
+ }
+ 
+ 
+ .food-app .logo-techno img, .myfastfood .logo-techno img, .logo-techno img, .logo-blog img{
+     width: 50px;
+     height: 50px;
+     align-self: center;
+ }
+ 
+ .logo-blog img.inertia{
+     border-radius: 30px;
+     width: 40px;
+     height: 40px;
+ }
+ 
+ .logo-blog a {
+     text-decoration:underline;
+     font-weight: 800;
+     color: var(--vert);
+     
+ }
+ 
+ .logo-blog img{
+     width: 35px;
+     height: 35px;
+ }
+ /* 
+ .apk-img{
+     width: 200px;
+     height: auto;
+     box-shadow: 0.5px 1px 3px 0.5px rgba(0, 0, 0, 0.603);
+     border-radius: 5px;
+ } */
+ 
+ .all-creations p{
+     text-align: center;
+     padding: 22px;
+     font-size: 16px;
+ }
+ 
+ 
+ .logo-techno{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+ 
+ 
+ .blog-project h2{
+     font-size: 17px;
+     font-family: menuFont;
+     text-align: center;
+     padding: 15px;
+     padding-top: 0;
+ }
+ 
+ 
+ .others-projects{
+     margin-left: 15%;
+     margin-right: 15%;
+     display: flex;
+     margin-top: 20px;
+     margin-bottom: 40px;
+     flex-wrap: wrap;
+     justify-content:center;
+     align-items: center;
+ }
+ 
+ .food-project .descrip-video p {
+     text-align: center;
+     padding: 15px;
+ }
+ 
+ .food-project{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+ }
+ /******************realisation fin ************************/
+ /******************début diplomes *************************/
+ 
+ @media (max-width:1086px) {
+     .others-projects{
+         justify-content: center;
+     }
+     .skills-1{
+         padding-top:0px ;
+         padding-bottom: 5px;
+     }
+ }
+ 
+ @media (min-width:675px) {
+     .dip-col2, .dip-col1{
+         grid-template-columns: repeat(auto-fill, 45%) ;
+     }
+    
+ }
+ 
+ .diplomes{
+     background-color: var(--vert);
+     padding-bottom: 20px;
+ }
+ 
+ .dip{
+     margin: 10px;
+     padding: 20px;
+     background-color: #fff;
+     border-radius: 10px;
+     box-shadow: 2px 1px 0px 0px rgba(0, 0, 0, 0.603);
+ }
+ 
+ .dip-col2, .dip-col1{
+     display: grid;
+     justify-content: center;
+ }
+ 
+ .dip p.title{
+     font-weight: bold;
+     font-size: 19px;
+     color: var(--vertDark);
+ }
+ 
+ .dip i{
+     color: var(--vert);
+ }
+ 
+ .dip p.lieu{
+     text-align: center;
+     padding: 10px;
+     padding-bottom: 0px;
+ }
+ 
+ /*************fin diplomes *****************/
+ /******************début Loisirs *************************/
+ .loisirs{
+    height: auto;
     background-color: var(--vert);
-    padding-bottom: 20px;
-}
-
-.dip{
-    margin: 10px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 2px 1px 0px 0px rgba(0, 0, 0, 0.603);
-}
-
-.dip-col2, .dip-col1{
-    display: grid;
-    justify-content: center;
-}
-
-.dip p.title{
-    font-weight: bold;
-    font-size: 19px;
-    color: var(--vertDark);
-    font-family: menuFont
-}
-
-.dip i{
-    color: var(--vert);
-}
-
-.dip p.lieu{
-    text-align: center;
-    padding: 10px;
-    padding-bottom: 0px;
-}
-
-/*************fin diplomes *****************/
-/******************début Loisirs *************************/
-.loisirs{
-   height: auto;
-   background-color: var(--vert);
-}
-
-.loisirs h2{
-    margin-left: 5%;
-    font-family: "titleFont";
-    color: var(--blackGreen);
-    font-size: 28px;
-}
-
-.loisirs p{
-    text-align: center;
-    padding: 20px;
-    font-family: menuFont;
-    font-size: 18px;
-    color: snow;
-}
-.loisirs i{
-    color: var(--vert);
-    font-size: 20px;
-}
-
-footer{
-  padding: 30px;
-  text-align: center;
-  color: var(--vertDark);
-}
-
-/****************** fin Loisirs *************************/
-/****************** début responsives values *************************/
-@media only screen and (max-width:740px) {
-    .myfastfood{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .loisirs h2{
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width:1114px) {
-    .food-project{
-        justify-content: center;
-    }
-}
-
-@media only screen and (max-width:550px) and (min-width:415px) {
-    .myfastfood, .others-projects{
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    .shop-project video, .food-project video{
-       width: 330px;
-    }
-    .shop-project, .food-video{
-        width: 380px;
-    }
-
-}
-
-@media only screen and (max-width:414px) {
-  .persoImg{
-      width: 240px;
-  }
-}
-
-@media only screen and (max-width:414px) and (min-width:321px) {
-    /**** debut a propros de moi ****/
-    .navIcon ul li a {
-        font-size: 50px ;
-    }
-
-    .aboutMe{
-        padding-bottom: 10px;
-    }
-
-    .names{
-        padding-bottom: 10px;
-        font-size: 52px;
-    }
-
-    .quality{
-        font-size: 17px;
-    }
-
-    .job{
-        font-size: 22px;
-    }
-
-    .descrip, .descrip b, .exp-list li {
-        font-size: 16px;
-    }
-    /**** fin a propros de moi****/
-
-    /** competences */
-    .techno-skills h2, .all-tools h2{
-        font-size: 20px;
-    }
-    /** fin competences*/
-
-    /**  debut realisations **/
-    .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
-        font-size: calc(14px + 2vh);
-    } 
-
-    .shop-project video, .food-project video{
-       width: 300px;
-    }
-
-    .shop-project, .food-video{
-        width: 350px;
-    }
-
-    .myfastfood, .others-projects{
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .others-projects{
-        padding: 10px;
-    }
-
-    .logo-shop{
-        padding: 5px;
-    }
-
-     /**  fin realisations **/
-     .dip p.title{
-        font-size: 15.5px;
-    }
+ }
  
-}
-
-/*** iphone SE/5 */
-@media only screen and (max-width:320px) and (min-width:281px) { 
-
-    /*** A propos de moi **/
-    .names{
-        font-size: 40px;
-    }
-
-    .job{
-        font-size: 19px;
-    }
-
-    .quality{
-        font-size: 15px;
-    }
-
-    .descrip, .descrip b, .dip p, .loisirs p, .realisations p, .exp-list li, .content-lang p{
-        font-size: 14px;
-    }
-
-    .navIcon ul li a {
-        font-size: 42px ;
-    }
-
-    /*** fin A propos de moi ***/
-    /*** début compétences **/
-
-    .group .framework{
-        width: 125px;
-        height: auto;
-        padding: 10px;
-    }
-
-    .group .framework img{
-        width: 40px;
-        height: 40px;
-    }
-
-    .framework h5{
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .techno-skills h2, .all-tools h2{
-        font-size: 19px;
-    }
-
-    .techno-skills h2, .all-tools h2{
-        font-size: 20px;
-    }
+ .loisirs h2{
+     margin-left: 5%;
+     font-family: "titleFont";
+     color: var(--blackGreen);
+     font-size: 28px;
+ }
+ 
+ .loisirs p{
+     padding: 20px;
+     font-size: 18px;
+     color: snow;
+     margin-left: 5%;
+ 
+ }
+ .loisirs i{
+     color: var(--vert);
+     font-size: 20px;
+ }
+ 
+ footer{
+   padding: 30px;
+   text-align: center;
+   color: var(--vertDark);
+ }
+ 
+ /****************** fin Loisirs *************************/
+ /****************** début responsives values *************************/
+ @media only screen and (max-width:740px) {
+     .myfastfood{
+         margin-left: 5%;
+         margin-right: 5%;
+     }
+     .loisirs h2{
+         text-align: center;
+     }
+ }
+ 
+ @media only screen and (max-width:1114px) {
+     .food-project{
+         justify-content:center;
+     }
+ }
+ 
+ @media only screen and (max-width:550px) and (min-width:415px) {
+     .myfastfood, .others-projects{
+         margin-left: 30px;
+         margin-right: 30px;
+     }
+     .blog-project video, .food-project video{
+        width: 330px;
+     }
+     .blog-project, .food-video,  .food-mobile{
+         width: 380px;
+     }
+     .food-mobile video{
+         width: 200px;
+      }
     
-    /*** fin compétences  **/
-    
-    /**  debut realisations **/
-    
-    .logo-shop{
-        padding: 10px;
-    }
-
-    .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
-        font-size: calc(14px + 2vh);
-    } 
-
-    .myfastfood, .others-projects{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .all-creations p{
-        font-size: 14px;
-    }
-    
-    .shop-project video, .food-project video{
-        width: 230px;
-    }
-
-    .shop-project, .food-video{
-        width: 320px;
-    }
-
-    .others-projects{
-        padding: 10px;
-    }
-
-    .logo-shop{
-        padding: 10px;
-    }
-    /**  fin realisations **/
-    /** début diplomes */
-
-    .dip p.title{
-        font-size: 16px;
-    }
-    /** fin diplomes */
-}
-
-/**** les plus petites tailles d'écrans galaxy fold *****/
-@media only screen and (max-width:280px) {
-
-    /*** A propos de moi **/
-    .names{
-        font-size: 35px;
-    }
-
-    .persoImg{
-        width: 200px;
-    }
-
-    .job{
-        font-size: 17px;
-    }
-    .quality{
-        font-size: 14px;
-    }
-
-    .descrip, .descrip b, .dip p, .loisirs p, .realisations p, .exp-list li, .content-lang p{
-        font-size: 13px;
-    }
-    .navIcon ul li a {
-        font-size: 39px ;
-    }
-
-    /*** fin A propos de moi ***/
-    /*** début compétences **/
-
-    .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
-        font-size: calc(12px + 2vh);
-    } 
-
-    .group .framework{
-        width: 110px;
-        height: auto;
-        padding: 10px;
-    }
-    .group .framework img{
-        width: 40px;
-        height: 40px;
-    }
-
-    .framework h5{
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .techno-skills h2, .all-tools h2{
-        font-size: 18px;
-    }
-
-    /*** fin compétences  **/
-    /*** début expérience **/
-
-    .exp h3{
-        font-size: 2.1vh;
-        text-align: left;
-    }
+ }
+ 
+ /* @media only screen and (max-width:414px) {
+   .persoImg{
+       width: 240px;
+   }
+ } */
+ 
+ @media only screen and (max-width:414px) and (min-width:321px) {
+     /**** debut a propros de moi ****/
+     .navIcon ul li a {
+         font-size: 50px ;
+     }
+ 
+     .aboutMe{
+         padding-bottom: 10px;
+     }
+ 
+     .names{
+         padding-bottom: 10px;
+         font-size: 52px;
+     }
+ 
+     .quality{
+         font-size: 17px;
+     }
+ 
+     .job{
+         font-size: 22px;
+     }
+ 
+     .descrip, .descrip b, .exp-list li {
+         font-size: 16px;
+     }
+     /**** fin a propros de moi****/
+ 
+     /** competences */
+     .techno-skills h2, .all-tools h2{
+         font-size: 20px;
+     }
+     /** fin competences*/
+ 
+     /**  debut realisations **/
+     .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
+         font-size: calc(14px + 2vh);
+     } 
+ 
+     .blog-project video, .food-project video{
+        width: 300px;
+     }
+ 
+     .blog-project, .food-video, .food-mobile{
+         width: 350px;
+     }
+ 
+     .food-mobile video{
+         width: 200px;
+      }
+  
+ 
+     .myfastfood, .others-projects{
+         margin-left: 15px;
+         margin-right: 15px;
+     }
+ 
+     .others-projects{
+         padding: 10px;
+     }
+ 
+  
+     
+ 
+ 
+      /**  fin realisations **/
+      .dip p.title{
+         font-size: 15.5px;
+     }
+  
+ }
+ 
+ /*** iphone SE/5 */
+ @media only screen and (max-width:320px) and (min-width:281px) { 
+ 
+     /*** A propos de moi **/
+     .names{
+         font-size: 40px;
+     }
+ 
+     .job{
+         font-size: 19px;
+     }
+ 
+     .quality{
+         font-size: 15px;
+     }
+ 
+     .descrip, .descrip b, .dip p, .loisirs p, .realisations p, .exp-list li, .content-lang p{
+         font-size: 14px;
+     }
+ 
+     .navIcon ul li a {
+         font-size: 42px ;
+     }
+ 
+     /*** fin A propos de moi ***/
+     /*** début compétences **/
+ 
+     .group .framework{
+         width: 125px;
+         height: auto;
+         padding: 10px;
+     }
+ 
+     .group .framework img{
+         width: 40px;
+         height: 40px;
+     }
+ 
+     .framework h5{
+         font-size: 12px;
+         text-align: center;
+     }
+ 
+     .techno-skills h2, .all-tools h2{
+         font-size: 19px;
+     }
+ 
+     .techno-skills h2, .all-tools h2{
+         font-size: 20px;
+     }
+     
+     /*** fin compétences  **/
+     
+     /**  debut realisations **/
+     
    
-    .all-exp h2, .all-exp a{
-        font-size: 2.3vh;
-    }
-
-    /*** fin expérience **/
-    /**  debut realisations **/
-    
-    .realisations h2{
-        font-size: 14px;
-    }
-
-    .logo-shop{
-        padding: 10px;
-    }
-
-    .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
-        font-size: calc(14px + 2vh);
-    } 
-
-    .myfastfood, .others-projects{
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .all-creations p{
-        font-size: 14px;
-    }
-    
-    .shop-project video, .food-project video{
-        width: 220px;
-    }
-
-    .shop-project, .food-video{
-        width: 250px;
-    }
-
-    .others-projects{
-        padding: 10px;
-    }
-
-    .logo-shop{
-        padding: 10px;
-    }
-    /**  fin realisations **/
-    /** début diplomes */
-
-    .dip p.title{
-        font-size: 15px;
-    }
-    /** fin diplomes */
-    .loisirs h2{
-        font-size: 20px;
-    }
+     
+     .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
+         font-size: calc(14px + 2vh);
+     } 
  
-}
-
-/****************** fin responsives values *************************/
+     .myfastfood, .others-projects{
+         margin-left: 20px;
+         margin-right: 20px;
+     }
+ 
+     .all-creations p{
+         font-size: 14px;
+     }
+     
+     .blog-project video, .food-project video{
+         width: 230px;
+     }
+     .food-mobile video{
+         width: 180px;
+     }
+ 
+     .blog-project, .food-video, .food-mobile{
+         width: 320px;
+     }
+ 
+     .others-projects{
+         padding: 10px;
+     }
+ 
+     
+     /**  fin realisations **/
+     /** début diplomes */
+ 
+     .dip p.title{
+         font-size: 16px;
+     }
+     /** fin diplomes */
+ }
+ 
+ /**** les plus petites tailles d'écrans galaxy fold *****/
+ @media only screen and (max-width:280px) {
+ 
+     /*** A propos de moi **/
+     .names{
+         font-size: 35px;
+     }
+ 
+     .persoImg{
+         width: 200px;
+         height: 200px;
+     }
+ 
+     .job{
+         font-size: 17px;
+     }
+     .quality{
+         font-size: 14px;
+     }
+ 
+     .descrip, .descrip b, .dip p, .loisirs p, .realisations p, .exp-list li, .content-lang p{
+         font-size: 13px;
+     }
+     .navIcon ul li a {
+         font-size: 39px ;
+     }
+ 
+     /*** fin A propos de moi ***/
+     /*** début compétences **/
+ 
+     .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
+         font-size: calc(12px + 2vh);
+     } 
+ 
+     .group .framework{
+         width: 110px;
+         height: auto;
+         padding: 10px;
+     }
+     .group .framework img{
+         width: 40px;
+         height: 40px;
+     }
+ 
+     .framework h5{
+         font-size: 12px;
+         text-align: center;
+     }
+ 
+     .techno-skills h2, .all-tools h2{
+         font-size: 18px;
+     }
+ 
+     /*** fin compétences  **/
+     /*** début expérience **/
+ 
+     .exp h3{
+         font-size: 2.1vh;
+         text-align: left;
+     }
+    
+     .all-exp h2, .all-exp a{
+         font-size: 2.3vh;
+     }
+ 
+     /*** fin expérience **/
+     /**  debut realisations **/
+     
+     .realisations h2{
+         font-size: 14px;
+     }
+ 
+   
+     
+     .skills h1, .exp-pro h1, .realisations h1, .diplomes h1{
+         font-size: calc(14px + 2vh);
+     } 
+ 
+     .myfastfood, .others-projects{
+         margin-left: 15px;
+         margin-right: 15px;
+     }
+ 
+     .all-creations p{
+         font-size: 14px;
+     }
+     
+     .blog-project video, .food-project video{
+         width: 220px;
+     }
+ 
+     .food-mobile video{
+         width: 150px;
+     }
+ 
+     .blog-project, .food-video, .food-mobile{
+         width: 250px;
+     }
+ 
+     .others-projects{
+         padding: 10px;
+     }
+ 
+     /**  fin realisations **/
+     /** début diplomes */
+ 
+     .dip p.title{
+         font-size: 15px;
+     }
+     /** fin diplomes */
+     .loisirs h2{
+         font-size: 20px;
+     }
+  
+ }
+ 
+ /****************** fin responsives values *************************/
