@@ -167,12 +167,7 @@ body{
     background-image: url(/img/flowers-g397c6e6aa_1920.jpg);
     background-size: cover;
 }
-.portrait{
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
+
 
 
 
@@ -216,17 +211,30 @@ body{
 }
 
 
-.persoImg{
-    width: 350px;
-    border-radius:  50% ;
-    border: 8px solid var(--vertDark);
+.portrait {
+    display: flex;
+    align-items: center; /* Aligne l'image et les infos verticalement au centre */
 }
 
-.navIcon ul{
+.persoImg {
+    border-radius: 50%; /* Pour avoir une image arrondie */
+    width: 350px; /* Ajustez la taille de l'image selon vos besoins */
+    height: 350px;
+    object-fit: cover; /* Assure que l'image garde ses proportions tout en remplissant l'espace */
+    margin-right: 20px; /* Ajoute de l'espace entre l'image et le texte */
+    border: 5px solid var(--vertDark); /* Ajoute une bordure de 10px avec une couleur spécifique */
+
+}
+
+.infos {
+    flex: 1; /* Prend tout l'espace disponible restant après l'image */
+}
+
+.navIcon ul {
     display: flex;
     justify-content: space-around;
-    margin-top: 5vh;
     align-items: center;
+    padding: 20px;
 }
 
 .navIcon ul li a {
